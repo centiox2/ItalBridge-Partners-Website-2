@@ -49,9 +49,9 @@ export default async function Manufacturers({ params }: PageProps<"/[lang]/manuf
       />
 
       <section className="bg-paper">
-        <div className={`${container} flex flex-wrap gap-14 py-28`}>
+        <div className={`${container} flex flex-wrap gap-10 sm:gap-14 py-16 sm:py-28`}>
           <h2 className={`${h2} reveal flex-[1_1_320px]`}>{benefits.title}</h2>
-          <div className="grid flex-[2_1_min(640px,100%)] grid-cols-[repeat(auto-fit,minmax(min(280px,100%),1fr))] gap-x-12 gap-y-9">
+          <div className="grid flex-[2_1_min(640px,100%)] grid-cols-[repeat(auto-fit,minmax(min(280px,100%),1fr))] gap-x-10 sm:gap-x-12 gap-y-9">
             {benefits.items.map((item, i) => (
               <div
                 key={item.title}
@@ -65,7 +65,7 @@ export default async function Manufacturers({ params }: PageProps<"/[lang]/manuf
         </div>
       </section>
 
-      <section className={`${container} flex flex-wrap items-center gap-14 py-28`}>
+      <section className={`${container} flex flex-wrap items-center gap-10 sm:gap-14 py-16 sm:py-28`}>
         <div className="reveal flex-[1_1_min(380px,100%)]">
           <h2 className={`${h2} mb-4`}>{numbers.title}</h2>
           <p className="m-0 mb-5 max-w-[46ch] leading-relaxed text-body">{numbers.text}</p>
@@ -89,7 +89,7 @@ export default async function Manufacturers({ params }: PageProps<"/[lang]/manuf
       </section>
 
       <section className="bg-paper">
-        <div className={`${container} py-28`}>
+        <div className={`${container} py-16 sm:py-28`}>
           <h2 className={`${h2} reveal mb-12 max-w-[700px]`}>{steps.title}</h2>
           <ol className="m-0 grid list-none grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4 p-0">
             {steps.items.map((item, i) => {

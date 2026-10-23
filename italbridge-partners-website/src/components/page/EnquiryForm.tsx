@@ -134,14 +134,14 @@ export default function EnquiryForm({
       {audience && (
         <fieldset className="col-span-full m-0 border-0 p-0">
           <legend className="mb-2.5 font-medium">{audience.legend}</legend>
-          <div className="inline-flex flex-wrap gap-1 rounded-lg bg-toggle p-1">
+          <div className="grid grid-cols-2 gap-1 rounded-lg bg-toggle p-1 sm:inline-flex">
             {audience.options.map((o, i) => (
               <button
                 key={o.who}
                 type="button"
                 aria-pressed={i === who}
                 onClick={() => setWho(i)}
-                className={`cursor-pointer rounded-md border-0 px-4 py-2.5 text-sm font-medium ${
+                className={`cursor-pointer rounded-md border-0 px-3 py-2.5 text-sm leading-snug font-medium sm:px-4 ${
                   i === who ? "bg-pill text-ink shadow-[0_2px_6px_-2px_rgba(21,27,38,0.18)]" : "bg-transparent text-sub"
                 }`}
               >
@@ -194,7 +194,7 @@ export default function EnquiryForm({
         );
       })}
       <div className="col-span-full flex flex-wrap items-center gap-x-5 gap-y-3">
-        <button type="submit" className={`${buttonInk} cursor-pointer border-0 px-6 py-3.5 font-medium`}>
+        <button type="submit" className={`${buttonInk} cursor-pointer border-0 px-6 py-3.5 font-medium max-sm:w-full`}>
           {submitLabel}
         </button>
         <span className="text-sm text-faint">

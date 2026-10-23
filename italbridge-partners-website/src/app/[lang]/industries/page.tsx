@@ -31,9 +31,9 @@ export default async function Industries({ params }: PageProps<"/[lang]/industri
 
   return (
     <>
-      <PageHeader lang={lang} nav={nav} crumb={nav.industries} title={hero.title} text={hero.text} className="pb-16" />
+      <PageHeader lang={lang} nav={nav} crumb={nav.industries} title={hero.title} text={hero.text} className="pb-10 sm:pb-16" />
 
-      <section className={`${container} pb-28`}>
+      <section className={`${container} pb-16 sm:pb-28`}>
         <IndustryPicker
           label={page.pickerLabel}
           equipment={page.equipment}
@@ -45,7 +45,7 @@ export default async function Industries({ params }: PageProps<"/[lang]/industri
       </section>
 
       <section className="bg-night text-cream">
-        <div className={`${container} flex flex-wrap items-center gap-14 py-28`}>
+        <div className={`${container} flex flex-wrap items-center gap-10 sm:gap-14 py-16 sm:py-28`}>
           <div className="reveal flex-[1_1_min(380px,100%)]">
             <h2 className={`${h2} mb-4`}>{network.title}</h2>
             <p className="m-0 max-w-[48ch] leading-[1.65] text-mist">{network.text}</p>

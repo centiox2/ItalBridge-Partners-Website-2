@@ -20,7 +20,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
 
   return (
     <>
-      <section className={`${container} flex flex-wrap items-center gap-16 pt-20 pb-26`}>
+      <section className={`${container} flex flex-wrap items-center gap-10 sm:gap-16 pt-10 sm:pt-20 pb-16 sm:pb-26`}>
         <AudienceHero
           label={audience.label}
           options={[
@@ -77,8 +77,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         />
       </figure>
 
-      <section className="mt-24 bg-paper">
-        <div className={`${container} flex flex-wrap gap-10 py-24`}>
+      <section className="mt-14 sm:mt-24 bg-paper">
+        <div className={`${container} flex flex-wrap gap-10 py-14 sm:py-24`}>
           <div className="reveal flex-[1_1_300px]">
             <h2 className="m-0 mb-4 text-[32px] leading-[1.1] font-semibold tracking-[-0.03em]">{numbers.title}</h2>
             <Link href={href(lang, "marketInsight")} className={textLink}>
@@ -99,7 +99,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section className={`${container} flex flex-wrap gap-6 py-32`}>
+      <section className={`${container} flex flex-wrap gap-6 py-18 sm:py-32`}>
         <article className="reveal lift flex flex-[1.2_1_min(460px,100%)] flex-col gap-5 rounded-[10px] border border-line p-8 sm:p-11">
           <h2 className="m-0 text-[30px] font-semibold tracking-[-0.03em]">{audiences.manufacturers.title}</h2>
           <p className="m-0 max-w-[52ch] leading-relaxed text-body">{audiences.manufacturers.text}</p>
@@ -119,8 +119,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       </section>
 
       <section className="bg-paper">
-        <div className={`${container} py-32`}>
-          <div className="reveal mb-14 flex flex-wrap items-end justify-between gap-6">
+        <div className={`${container} py-18 sm:py-32`}>
+          <div className="reveal mb-10 sm:mb-14 flex flex-wrap items-end justify-between gap-6">
             <h2 className={`${h2Large} max-w-[700px]`}>{stages.title}</h2>
             <Link href={href(lang, "services")} className={textLink}>
               <ArrowLabel text={stages.link} />
@@ -140,7 +140,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section className={`${container} flex flex-wrap gap-14 py-32`}>
+      <section className={`${container} flex flex-wrap gap-10 sm:gap-14 py-18 sm:py-32`}>
         <div className="reveal flex-[1_1_320px]">
           <h2 className={`${h2Large} mb-4`}>{industries.title}</h2>
           <p className="m-0 max-w-[40ch] leading-relaxed text-body">{industries.text}</p>

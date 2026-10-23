@@ -30,10 +30,10 @@ export default async function Services({ params }: PageProps<"/[lang]/services">
 
   return (
     <>
-      <PageHeader lang={lang} nav={nav} crumb={nav.services} title={hero.title} text={hero.text} className="pb-24" />
+      <PageHeader lang={lang} nav={nav} crumb={nav.services} title={hero.title} text={hero.text} className="pb-14 sm:pb-24" />
 
       <section className="bg-paper">
-        <div className={`${container} flex flex-wrap gap-12 pt-24 pb-32`}>
+        <div className={`${container} flex flex-wrap gap-10 sm:gap-12 pt-14 sm:pt-24 pb-18 sm:pb-32`}>
           <StageTabs
             label={page.tabsLabel}
             stageLabel={stage}
@@ -44,12 +44,12 @@ export default async function Services({ params }: PageProps<"/[lang]/services">
         </div>
       </section>
 
-      <section className={`${container} flex flex-wrap gap-14 py-32`}>
+      <section className={`${container} flex flex-wrap gap-10 sm:gap-14 py-18 sm:py-32`}>
         <h2 className={`${h2} reveal flex-[1_1_300px]`}>{faq.title}</h2>
         <div className="draw flex-[2_1_min(640px,100%)] border-t border-ink [--bw:1px]">
           {faq.items.map((item) => (
             <details key={item.q} className="reveal border-b border-line py-5.5">
-              <summary className="flex justify-between gap-6 text-[19px] font-medium">
+              <summary className="-my-2.5 flex cursor-pointer justify-between gap-6 py-2.5 text-[19px] font-medium">
                 {item.q}
                 <span aria-hidden className="plus text-2xl leading-none">
                   +

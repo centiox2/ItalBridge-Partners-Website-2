@@ -40,7 +40,7 @@ export default function LegalPage({
   return (
     <>
       <PageHeader lang={lang} nav={nav} crumb={title} title={title} text={intro} />
-      <div className={`${container} flex flex-wrap items-start gap-x-16 gap-y-10 pb-28`}>
+      <div className={`${container} flex flex-wrap items-start gap-x-10 sm:gap-x-16 gap-y-10 pb-16 sm:pb-28`}>
         <aside className="w-full rounded-xl bg-paper p-7 text-[15px] md:sticky md:top-6 md:w-auto md:flex-[0_1_320px]">
           <div className={label}>{legal.documents}</div>
           <nav aria-label={legal.documents} className="mb-6">

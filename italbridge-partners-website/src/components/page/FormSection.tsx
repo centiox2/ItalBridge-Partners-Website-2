@@ -22,7 +22,7 @@ export default function FormSection({
 }) {
   return (
     <section id={id} className={`scroll-mt-4 ${tinted ? "bg-paper" : ""}`}>
-      <div className={`${container} flex flex-wrap gap-16 py-30`}>
+      <div className={`${container} flex flex-wrap gap-10 sm:gap-16 py-18 sm:py-30`}>
         <div className="reveal flex-[1_1_min(340px,100%)]">
           <h2 className={`${h2} mb-4`}>{title}</h2>
           <p className="m-0 mb-6 max-w-[42ch] leading-relaxed text-body">{text}</p>

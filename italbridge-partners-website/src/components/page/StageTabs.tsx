@@ -1,9 +1,10 @@
 "use client";
 
 import Image, { type StaticImageData } from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Arrow, Check } from "./icons";
 import { stagger } from "../ui";
+import { showInStrip } from "./strip";
 
 type Stage = {
   name: string;
@@ -15,6 +16,7 @@ type Stage = {
 };
 
 // Services page: list of the six stages; the selected one is shown in detail.
+// Below the two-column width the list is a row to swipe, above the detail.
 export default function StageTabs({
   label,
   stageLabel,
@@ -30,28 +32,34 @@ export default function StageTabs({
 }) {
   const [picked, setPicked] = useState(0);
   const cur = stages[picked];
+  const strip = useRef<HTMLOListElement>(null);
+  useEffect(() => showInStrip(strip.current, picked), [picked]);
   const list = "m-0 flex list-none flex-col gap-2.5 p-0 text-body";
 
   return (
     <>
-      <ol aria-label={label} className="m-0 flex flex-[1_1_min(340px,100%)] list-none flex-col gap-1 p-0">
+      <ol
+        ref={strip}
+        aria-label={label}
+        className="strip m-0 flex flex-[1_1_min(340px,100%)] list-none flex-col gap-1 p-0 max-lg:-mx-4 max-lg:basis-full max-lg:snap-x max-lg:snap-mandatory max-lg:scroll-px-4 max-lg:flex-row max-lg:gap-2 max-lg:overflow-x-auto max-lg:px-4 sm:max-lg:-mx-8 sm:max-lg:scroll-px-8 sm:max-lg:px-8"
+      >
         {stages.map((s, i) => {
           const active = i === picked;
           return (
-            <li key={s.name}>
+            <li key={s.name} className="max-lg:w-[min(230px,64vw)] max-lg:shrink-0 max-lg:snap-start">
               <button
                 type="button"
                 aria-pressed={active}
                 aria-controls="stage-detail"
                 onClick={() => setPicked(i)}
-                className={`flex w-full cursor-pointer items-baseline gap-4 rounded-lg border-0 px-5 py-4.5 text-left transition-colors ${
-                  active ? "bg-btn text-btn-fg" : "bg-transparent text-ink hover:bg-chip-hover"
+                className={`flex w-full cursor-pointer items-baseline gap-4 rounded-lg border-0 px-5 py-4.5 text-left transition-colors max-lg:h-full max-lg:flex-col max-lg:gap-1 max-lg:px-4 max-lg:py-3.5 ${
+                  active ? "bg-btn text-btn-fg" : "bg-transparent text-ink hover:bg-chip-hover max-lg:bg-card"
                 }`}
               >
                 <span className={`min-w-[54px] text-sm ${active ? "text-btn-fg/70" : "text-faint"}`}>
                   {stageLabel} {i + 1}
                 </span>
-                <span className={`text-lg ${active ? "font-medium" : ""}`}>{s.name}</span>
+                <span className={`text-lg leading-snug max-lg:text-base ${active ? "font-medium" : ""}`}>{s.name}</span>
               </button>
             </li>
           );

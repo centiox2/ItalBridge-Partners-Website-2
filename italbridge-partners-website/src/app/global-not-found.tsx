@@ -39,11 +39,11 @@ export default function GlobalNotFound() {
             </Link>
           </div>
         </div>
-        <main className={`${container} flex flex-col gap-12 pt-20 pb-32`}>
+        <main className={`${container} flex flex-col gap-10 sm:gap-12 pt-10 sm:pt-20 pb-18 sm:pb-32`}>
           <p className="m-0 text-[clamp(64px,10vw,140px)] leading-none font-semibold tracking-[-0.05em] text-steel">
             404
           </p>
-          <div className="flex flex-wrap gap-x-16 gap-y-12">
+          <div className="flex flex-wrap gap-x-10 sm:gap-x-16 gap-y-10 sm:gap-y-12">
             {[
               { lang: "en", copy: en.notFound, primary: true },
               { lang: "it", copy: it.notFound, primary: false },

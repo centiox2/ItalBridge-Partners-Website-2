@@ -37,9 +37,9 @@ export default async function Buyers({ params }: PageProps<"/[lang]/buyers">) {
       />
 
       <section className="bg-night text-cream">
-        <div className={`${container} flex flex-wrap gap-14 py-28`}>
+        <div className={`${container} flex flex-wrap gap-10 sm:gap-14 py-16 sm:py-28`}>
           <h2 className={`${h2} reveal flex-[1_1_320px]`}>{reasons.title}</h2>
-          <div className="grid flex-[2_1_min(640px,100%)] grid-cols-[repeat(auto-fit,minmax(min(280px,100%),1fr))] gap-x-12 gap-y-9">
+          <div className="grid flex-[2_1_min(640px,100%)] grid-cols-[repeat(auto-fit,minmax(min(280px,100%),1fr))] gap-x-10 sm:gap-x-12 gap-y-9">
             {reasons.items.map((item, i) => (
               <div
                 key={item.title}
@@ -53,7 +53,7 @@ export default async function Buyers({ params }: PageProps<"/[lang]/buyers">) {
         </div>
       </section>
 
-      <section className={`${container} flex flex-wrap gap-14 py-28`}>
+      <section className={`${container} flex flex-wrap gap-10 sm:gap-14 py-16 sm:py-28`}>
         <RequirementChecklist {...checklist} />
       </section>
 

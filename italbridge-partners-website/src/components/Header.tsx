@@ -38,18 +38,20 @@ export default function Header({
         {nav.skip}
       </a>
       <div className="bg-night text-[13px] text-mist">
-        <div className={`${container} flex flex-wrap justify-between gap-x-6 gap-y-2 py-2.5`}>
-          <span className="flex items-center gap-2">
+        {/* Wide screens: location left; email, phone and language right. Phones:
+            location and language on the first row, email and phone below. */}
+        <div className={`${container} flex flex-wrap items-center gap-x-2 gap-y-2 py-2.5`}>
+          <span className="mr-auto flex items-center gap-2">
             <span aria-hidden className="pulse inline-block size-[7px] rounded-full bg-steel" />
             {nav.office}
           </span>
-          <span className="flex flex-wrap items-center gap-x-2">
-            <a href={`mailto:${email}`} className="hover:text-white">{email}</a>
+          <span className="flex flex-wrap items-center gap-x-2 max-sm:order-last max-sm:w-full">
+            <a href={`mailto:${email}`} className="-my-2.5 py-2.5 hover:text-white">{email}</a>
             <span aria-hidden>·</span>
-            <a href={`tel:${phone.tel}`} className="hover:text-white">{phone.display}</a>
-            <span aria-hidden>·</span>
-            <LanguageSwitcher current={lang} label={nav.language} />
+            <a href={`tel:${phone.tel}`} className="-my-2.5 py-2.5 hover:text-white">{phone.display}</a>
           </span>
+          <span aria-hidden className="max-sm:hidden">·</span>
+          <LanguageSwitcher current={lang} label={nav.language} />
         </div>
       </div>
       {/* One row at every width: logo, then the links (wide screens) and the actions.

@@ -224,6 +224,15 @@ summary::-webkit-details-marker {
   }
 }
 
+/* Picker rows that scroll sideways on phones (strip.ts): swiped, so no scrollbar. */
+.strip {
+  scrollbar-width: none;
+}
+
+.strip::-webkit-scrollbar {
+  display: none;
+}
+
 /* Lines that draw across (.draw) replace their top border with this bar. */
 .draw::before {
   content: none;

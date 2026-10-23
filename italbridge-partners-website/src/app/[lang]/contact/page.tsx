@@ -28,7 +28,7 @@ export default async function Contact({ params }: PageProps<"/[lang]/contact">) 
   ];
 
   return (
-    <section className={`${container} flex flex-wrap gap-16 pt-18 pb-30`}>
+    <section className={`${container} flex flex-wrap gap-10 sm:gap-16 pt-10 sm:pt-18 pb-18 sm:pb-30`}>
       <div className="min-w-0 flex-[1_1_min(380px,100%)]">
         <Breadcrumb lang={lang} nav={nav}>
           {nav.contact}

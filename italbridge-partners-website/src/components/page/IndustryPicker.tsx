@@ -2,8 +2,9 @@
 
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { buttonInk, sizeMd, stagger } from "../ui";
+import { showInStrip } from "./strip";
 
 type Industry = {
   name: string;
@@ -15,7 +16,7 @@ type Industry = {
 
 // Industries page: a card per industry; the selected one is shown in detail.
 // Links like /industries?industry=3 open at the top of the page with that
-// industry selected.
+// industry selected. On phones the cards are a row to swipe, above the detail.
 export default function IndustryPicker({
   label,
   equipment,
@@ -33,6 +34,8 @@ export default function IndustryPicker({
 }) {
   const [picked, setPicked] = useState(0);
   const cur = industries[picked];
+  const strip = useRef<HTMLUListElement>(null);
+  useEffect(() => showInStrip(strip.current, picked), [picked]);
 
   useEffect(() => {
     const index = Number(new URLSearchParams(window.location.search).get("industry")) - 1;
@@ -42,17 +45,21 @@ export default function IndustryPicker({
 
   return (
     <>
-      <ul aria-label={label} className="m-0 mb-10 grid list-none grid-cols-[repeat(auto-fit,minmax(min(200px,100%),1fr))] gap-3 p-0">
+      <ul
+        ref={strip}
+        aria-label={label}
+        className="strip m-0 mb-10 grid list-none grid-cols-[repeat(auto-fit,minmax(min(200px,100%),1fr))] gap-3 p-0 max-sm:-mx-4 max-sm:mb-6 max-sm:flex max-sm:snap-x max-sm:snap-mandatory max-sm:scroll-px-4 max-sm:overflow-x-auto max-sm:px-4"
+      >
         {industries.map((ind, i) => {
           const active = i === picked;
           return (
-            <li key={ind.name}>
+            <li key={ind.name} className="max-sm:w-[min(200px,42vw)] max-sm:shrink-0 max-sm:snap-start">
               <button
                 type="button"
                 aria-pressed={active}
                 aria-controls="industry-detail"
                 onClick={() => setPicked(i)}
-                className={`group w-full cursor-pointer overflow-hidden rounded-[10px] border-2 p-0 text-left transition-colors ${
+                className={`group h-full w-full cursor-pointer overflow-hidden rounded-[10px] border-2 p-0 text-left transition-colors ${
                   active ? "border-ink bg-night text-white" : "border-line bg-card text-ink hover:border-ink"
                 }`}
               >
@@ -60,15 +67,15 @@ export default function IndustryPicker({
                   <Image
                     src={ind.image}
                     alt=""
-                    // The first card is the largest element on a phone's first screen.
+                    // The first card is on a phone's first screen.
                     preload={i === 0}
                     fetchPriority={i === 0 ? "high" : undefined}
                     placeholder="blur"
-                    sizes="(min-width: 1200px) 220px, (min-width: 640px) 33vw, 100vw"
+                    sizes="(min-width: 1200px) 220px, (min-width: 640px) 33vw, 42vw"
                     className="zoom block aspect-[16/10] w-full object-cover"
                   />
                 </span>
-                <span className="block px-4 py-3.5 font-medium">{ind.name}</span>
+                <span className="block px-4 py-3.5 leading-snug font-medium max-sm:px-3 max-sm:py-3 max-sm:text-[15px]">{ind.name}</span>
               </button>
             </li>
           );
@@ -78,12 +85,12 @@ export default function IndustryPicker({
         id="industry-detail"
         key={picked}
         aria-live="polite"
-        className="flex flex-wrap gap-12 rounded-xl bg-paper p-6 sm:p-12"
+        className="flex flex-wrap gap-10 rounded-xl bg-paper p-6 sm:gap-12 sm:p-12"
       >
         <div className="fade flex-[1_1_min(380px,100%)]">
           <h2 className="m-0 mb-3.5 text-[34px] leading-tight font-semibold tracking-[-0.03em]">{cur.name}</h2>
           <p className="m-0 mb-6 max-w-[50ch] text-[17px] leading-[1.65] text-body">{cur.body}</p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 *:max-sm:grow">
             <Link href={discuss.href} className={`${buttonInk} ${sizeMd}`}>
               {discuss.label}
             </Link>

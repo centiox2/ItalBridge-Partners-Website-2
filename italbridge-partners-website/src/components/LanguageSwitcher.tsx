@@ -19,7 +19,7 @@ export default function LanguageSwitcher({
   const rest = pathname.split("/").slice(2).join("/");
 
   return (
-    <span role="group" aria-label={label} className="inline-flex gap-1">
+    <span role="group" aria-label={label} className="inline-flex items-center">
       {locales.map((l, i) => (
         <Fragment key={l}>
           {i > 0 && <span aria-hidden>/</span>}
@@ -34,7 +34,7 @@ export default function LanguageSwitcher({
               event.preventDefault();
               router.push(`/${l}${rest ? `/${rest}` : ""}${window.location.search}`);
             }}
-            className={`uppercase ${l === current ? "font-semibold text-white" : "hover:text-white"}`}
+            className={`-my-2.5 inline-flex min-w-7 justify-center py-2.5 uppercase ${l === current ? "font-semibold text-white" : "hover:text-white"}`}
           >
             {l}
           </Link>

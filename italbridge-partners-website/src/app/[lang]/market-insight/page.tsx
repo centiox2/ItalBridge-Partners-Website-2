@@ -30,7 +30,7 @@ export default async function MarketInsight({ params }: PageProps<"/[lang]/marke
     <>
       <PageHeader lang={lang} nav={nav} crumb={nav.marketInsight} title={hero.title} text={hero.text} />
 
-      <section className={`${container} flex flex-wrap gap-5 pb-24`}>
+      <section className={`${container} flex flex-wrap gap-5 pb-14 sm:pb-24`}>
         <figure className="flex-[1.3_1_min(520px,100%)] rounded-xl bg-paper p-6 sm:p-10">
           <figcaption className="mb-8">
             <strong className="block text-[19px] font-semibold">{imports.title}</strong>
@@ -71,7 +71,7 @@ export default async function MarketInsight({ params }: PageProps<"/[lang]/marke
       </section>
 
       <section className="bg-paper">
-        <div className={`${container} flex flex-wrap gap-14 py-28`}>
+        <div className={`${container} flex flex-wrap gap-10 sm:gap-14 py-16 sm:py-28`}>
           <div className="reveal flex-[1_1_min(360px,100%)]">
             <h2 className={`${h2} mb-4`}>{position.title}</h2>
             <p className="m-0 max-w-[44ch] leading-relaxed text-body">{position.text}</p>
@@ -114,11 +114,12 @@ export default async function MarketInsight({ params }: PageProps<"/[lang]/marke
         </div>
       </section>
 
-      <section className={`${container} py-28`}>
+      <section className={`${container} py-16 sm:py-28`}>
         <h2 className={`${h2} reveal mb-8`}>{sources.title}</h2>
+        {/* On phones each row is a small card, its cells labelled with the column names. */}
         <div className="reveal overflow-x-auto rounded-[10px] border border-line">
-          <table className="w-full min-w-[640px] border-collapse text-left text-[15px]">
-            <thead>
+          <table className="w-full border-collapse text-left text-[15px] max-sm:block sm:min-w-[640px]">
+            <thead className="max-sm:sr-only">
               <tr className="bg-paper">
                 {sources.head.map((h) => (
                   <th key={h} scope="col" className="px-4.5 py-3.5 font-medium text-sub">
@@ -127,11 +128,19 @@ export default async function MarketInsight({ params }: PageProps<"/[lang]/marke
                 ))}
               </tr>
             </thead>
-            <tbody>
+            <tbody className="max-sm:block">
               {sources.rows.map((row) => (
-                <tr key={row[0]} className="border-t border-line">
+                <tr key={row[0]} className="border-t border-line max-sm:block max-sm:px-4.5 max-sm:py-4 max-sm:first:border-t-0">
                   {row.map((cell, i) => (
-                    <td key={i} className="px-4.5 py-3.5">
+                    <td
+                      key={i}
+                      data-label={sources.head[i]}
+                      className={`px-4.5 py-3.5 max-sm:block max-sm:p-0 ${
+                        i === 0
+                          ? "max-sm:mb-2 max-sm:font-medium"
+                          : "max-sm:mt-1.5 max-sm:flex max-sm:gap-3 max-sm:before:w-20 max-sm:before:shrink-0 max-sm:before:text-sub max-sm:before:content-[attr(data-label)]"
+                      }`}
+                    >
                       {cell}
                     </td>
                   ))}

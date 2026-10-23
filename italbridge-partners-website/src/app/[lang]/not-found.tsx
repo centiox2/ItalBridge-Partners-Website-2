@@ -9,7 +9,7 @@ export default async function NotFound() {
   const { notFound } = await getDictionary(locale);
 
   return (
-    <section className={`${container} flex flex-col items-start gap-6 pt-20 pb-32`}>
+    <section className={`${container} flex flex-col items-start gap-6 pt-10 sm:pt-20 pb-18 sm:pb-32`}>
       <p className="m-0 text-[clamp(64px,10vw,140px)] leading-none font-semibold tracking-[-0.05em] text-steel">
         404
       </p>

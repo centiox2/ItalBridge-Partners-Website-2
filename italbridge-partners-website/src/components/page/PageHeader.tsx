@@ -17,7 +17,7 @@ export function Breadcrumb({
 }) {
   return (
     <nav aria-label={nav.breadcrumb} className="enter mb-5 text-[15px] text-sub">
-      <Link href={href(lang, "home")} className="underline underline-offset-[3px] hover:text-ink">
+      <Link href={href(lang, "home")} className="-my-2.5 inline-block py-2.5 underline underline-offset-[3px] hover:text-ink">
         {nav.home}
       </Link>{" "}
       / <span aria-current="page">{children}</span>
@@ -42,11 +42,11 @@ export default function PageHeader({
   className?: string;
 }) {
   return (
-    <section className={`${container} pt-18 ${className}`}>
+    <section className={`${container} pt-10 sm:pt-18 ${className}`}>
       <Breadcrumb lang={lang} nav={nav}>
         {crumb}
       </Breadcrumb>
-      <div className="flex flex-wrap items-end gap-12">
+      <div className="flex flex-wrap items-end gap-10 sm:gap-12">
         <h1 className={`${h1} enter flex-[3_1_min(600px,100%)]`}>{title}</h1>
         <p className="enter m-0 flex-[2_1_min(340px,100%)] text-lg leading-[1.65] text-body">
           {text}

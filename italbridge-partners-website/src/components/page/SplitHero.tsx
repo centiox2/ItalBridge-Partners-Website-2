@@ -29,14 +29,14 @@ export default function SplitHero({
   imageAlt: string;
 }) {
   return (
-    <section className={`${container} flex flex-wrap items-center gap-14 pt-18 pb-28`}>
+    <section className={`${container} flex flex-wrap items-center gap-10 sm:gap-14 pt-10 sm:pt-18 pb-16 sm:pb-28`}>
       <div className="min-w-0 flex-[6_1_min(520px,100%)]">
         <Breadcrumb lang={lang} nav={nav}>
           {crumb}
         </Breadcrumb>
         <h1 className={`${h1} enter max-w-[720px]`}>{title}</h1>
         <p className="enter mt-6.5 mb-0 max-w-[54ch] text-[19px] leading-[1.6] text-body">{text}</p>
-        <div className="enter mt-9 flex flex-wrap gap-3">
+        <div className="enter mt-9 flex flex-wrap gap-3 *:max-sm:grow">
           <Link href={primary.href} className={`${buttonInk} ${sizeMd}`}>
             {primary.label}
           </Link>

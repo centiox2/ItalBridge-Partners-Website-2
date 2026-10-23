@@ -19,12 +19,12 @@ export default function CtaBand({
 }) {
   const dark = tone === "dark";
   const inner = (
-    <div className={`${container} flex flex-wrap items-center justify-between gap-10 ${dark ? "py-26" : "py-28"}`}>
+    <div className={`${container} flex flex-wrap items-center justify-between gap-10 ${dark ? "py-16 sm:py-26" : "py-16 sm:py-28"}`}>
       <div className="reveal flex-[2_1_min(520px,100%)]">
         <h2 className={`${large ? h2Large : h2} mb-3.5`}>{title}</h2>
         <p className={`m-0 max-w-[52ch] leading-relaxed ${dark ? "text-mist" : "text-body"}`}>{text}</p>
       </div>
-      <div className="reveal flex flex-wrap gap-3">
+      <div className="reveal flex flex-wrap gap-3 *:max-sm:grow max-sm:w-full">
         <Link href={primary.href} className={`${dark ? buttonCream : buttonInk} ${sizeLg}`}>
           {primary.label}
         </Link>

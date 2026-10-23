@@ -11,9 +11,9 @@ async function currentYear() {
   return new Date().getFullYear();
 }
 
-const heading = "font-medium text-white";
-const column = "flex flex-col items-start gap-2.5";
-const link = "hover:text-white";
+const heading = "mb-1 font-medium text-white";
+const column = "flex flex-col items-start gap-1";
+const link = "py-1.5 hover:text-white";
 
 export default async function Footer({
   lang,
@@ -33,8 +33,8 @@ export default async function Footer({
 
   return (
     <footer className="bg-ink-deep text-[15px] text-mist">
-      <div className={`${container} grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-10 pt-18 pb-8`}>
-        <div>
+      <div className={`${container} grid grid-cols-2 gap-10 pt-10 pb-8 sm:grid-cols-[repeat(auto-fit,minmax(190px,1fr))] sm:pt-18`}>
+        <div className="max-sm:col-span-2">
           <Image src={images.logo} alt={nav.logoAlt} width={64} height={54} className="mb-3.5 block h-auto w-16" />
           <div className="font-semibold text-white">ItalBridge Partners</div>
           <p className="mt-1.5 mb-0 leading-relaxed">{footer.tagline}</p>
@@ -52,7 +52,7 @@ export default async function Footer({
           {pageLink("buyers", nav.buyers)}
           {pageLink("contact", nav.contact)}
         </div>
-        <div className={column}>
+        <div className={`${column} max-sm:col-span-2`}>
           <strong className={heading}>{footer.contact}</strong>
           {contact.emails.map((email) => (
             <a key={email} href={`mailto:${email}`} className={`${link} break-all`}>
@@ -76,7 +76,7 @@ export default async function Footer({
         <ul aria-label={footer.social} className="m-0 flex list-none flex-wrap gap-5 p-0">
           {socials.map((s) => (
             <li key={s.href}>
-              <a href={s.href} target="_blank" rel="noopener noreferrer" className={`${link} underline`}>
+              <a href={s.href} target="_blank" rel="noopener noreferrer" className={`${link} inline-block min-w-6 text-center underline`}>
                 {s.label}
               </a>
             </li>

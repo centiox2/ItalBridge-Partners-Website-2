@@ -37,7 +37,7 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
         <figcaption className="mt-3 text-sm text-faint">{hero.caption}</figcaption>
       </figure>
 
-      <section className={`${container} flex flex-wrap gap-16 py-32`}>
+      <section className={`${container} flex flex-wrap gap-10 sm:gap-16 py-18 sm:py-32`}>
         <h2 className={`${h2} reveal flex-[1_1_320px]`}>{why.title}</h2>
         <div className="flex flex-[2_1_min(640px,100%)] flex-col gap-7 text-[19px] leading-[1.65] text-body">
           {why.paragraphs.map((p) => (
@@ -52,9 +52,9 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
       </section>
 
       <section className="bg-paper">
-        <div className={`${container} py-32`}>
-          <h2 className={`${h2} reveal mb-14 max-w-[700px]`}>{different.title}</h2>
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-x-14 gap-y-11">
+        <div className={`${container} py-18 sm:py-32`}>
+          <h2 className={`${h2} reveal mb-10 sm:mb-14 max-w-[700px]`}>{different.title}</h2>
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-x-10 sm:gap-x-14 gap-y-9 sm:gap-y-11">
             {different.items.map((item, i) => (
               <div
                 key={item.title}
@@ -68,7 +68,7 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
         </div>
       </section>
 
-      <section className={`${container} flex flex-wrap items-center gap-12 py-32`}>
+      <section className={`${container} flex flex-wrap items-center gap-10 sm:gap-12 py-18 sm:py-32`}>
         <Image
           src={images.engineer}
           alt={vetting.imageAlt}

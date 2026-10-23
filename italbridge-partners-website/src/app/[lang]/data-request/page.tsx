@@ -23,7 +23,7 @@ export default async function DataRequest({ params }: PageProps<"/[lang]/data-re
       <PageHeader lang={lang} nav={nav} crumb={footer.dataRequest} title={page.title} text={page.intro} />
 
       <section className="bg-paper">
-        <div className={`${container} flex flex-wrap gap-14 py-28`}>
+        <div className={`${container} flex flex-wrap gap-10 sm:gap-14 py-16 sm:py-28`}>
           <div className="reveal flex-[1_1_min(360px,100%)]">
             <h2 className={`${h2} mb-4`}>{rights.title}</h2>
             <p className="m-0 max-w-[48ch] leading-relaxed text-body">{rights.text}</p>
