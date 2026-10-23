@@ -9,7 +9,7 @@ import EnquiryForm from "@/components/page/EnquiryForm";
 import FormSection from "@/components/page/FormSection";
 import SplitHero from "@/components/page/SplitHero";
 import { ArrowLabel } from "@/components/page/icons";
-import { container, h2, stagger, stat, textLink } from "@/components/ui";
+import { container, h2, stat, textLink } from "@/components/ui";
 import { images } from "@/images";
 
 export const generateMetadata = ({ params }: PageProps<"/[lang]/manufacturers">) =>
@@ -55,7 +55,6 @@ export default async function Manufacturers({ params }: PageProps<"/[lang]/manuf
             {benefits.items.map((item, i) => (
               <div
                 key={item.title}
-                style={stagger(i % 2)}
                 className={`reveal pt-4.5 ${i < 2 ? "draw border-t-2 border-ink" : "border-t border-rule"}`}
               >
                 <h3 className="m-0 mb-2 text-[19px] font-semibold">{item.title}</h3>
@@ -78,7 +77,6 @@ export default async function Manufacturers({ params }: PageProps<"/[lang]/manuf
           {numbers.items.map((item, i) => (
             <div
               key={item.text}
-              style={stagger(i)}
               className={`reveal rounded-[10px] p-7 ${i === 0 ? "bg-night text-cream" : "bg-paper"}`}
             >
               <div className={stat}>
@@ -99,7 +97,6 @@ export default async function Manufacturers({ params }: PageProps<"/[lang]/manuf
               return (
                 <li
                   key={item.title}
-                  style={stagger(i)}
                   className={`reveal lift rounded-[10px] p-7 ${last ? "bg-night text-white" : "bg-card"}`}
                 >
                   <span className={`text-sm font-semibold ${last ? "text-steel" : "text-sub"}`}>

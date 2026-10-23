@@ -6,7 +6,7 @@ import { href } from "@/site";
 import CtaBand from "@/components/page/CtaBand";
 import PageHeader from "@/components/page/PageHeader";
 import StageTabs from "@/components/page/StageTabs";
-import { container, h2, stagger } from "@/components/ui";
+import { container, h2 } from "@/components/ui";
 import { images } from "@/images";
 
 export const generateMetadata = ({ params }: PageProps<"/[lang]/services">) =>
@@ -47,8 +47,8 @@ export default async function Services({ params }: PageProps<"/[lang]/services">
       <section className={`${container} flex flex-wrap gap-14 py-32`}>
         <h2 className={`${h2} reveal flex-[1_1_300px]`}>{faq.title}</h2>
         <div className="draw flex-[2_1_min(640px,100%)] border-t border-ink [--bw:1px]">
-          {faq.items.map((item, i) => (
-            <details key={item.q} className="reveal border-b border-line py-5.5" style={stagger(i)}>
+          {faq.items.map((item) => (
+            <details key={item.q} className="reveal border-b border-line py-5.5">
               <summary className="flex justify-between gap-6 text-[19px] font-medium">
                 {item.q}
                 <span aria-hidden className="plus text-2xl leading-none">

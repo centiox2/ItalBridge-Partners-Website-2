@@ -41,11 +41,11 @@ export default function AudienceHero({
       </div>
       {/* Keyed so the copy replays its entrance when the audience changes. */}
       <div key={picked}>
-        <h1 className="enter m-0 max-w-[780px] text-[clamp(42px,4.8vw,68px)] leading-[1.02] font-semibold tracking-[-0.04em] [--i:1]">
+        <h1 className="enter m-0 max-w-[780px] text-[clamp(42px,4.8vw,68px)] leading-[1.02] font-semibold tracking-[-0.04em]">
           {copy.title}
         </h1>
-        <p className="enter mt-7 mb-0 max-w-[56ch] text-[19px] leading-[1.6] text-body [--i:2]">{copy.text}</p>
-        <div className="enter mt-10 flex flex-wrap gap-3 [--i:3]">
+        <p className="enter mt-7 mb-0 max-w-[56ch] text-[19px] leading-[1.6] text-body">{copy.text}</p>
+        <div className="enter mt-10 flex flex-wrap gap-3">
           <Link href={copy.primary.href} className={`${buttonInk} ${sizeMd}`}>
             {copy.primary.label}
           </Link>

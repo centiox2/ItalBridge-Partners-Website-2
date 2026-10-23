@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/metadata";
 import { href } from "@/site";
 import CtaBand from "@/components/page/CtaBand";
 import PageHeader from "@/components/page/PageHeader";
-import { container, h2, photo, stagger } from "@/components/ui";
+import { container, h2, photo } from "@/components/ui";
 import { images } from "@/images";
 
 export const generateMetadata = ({ params }: PageProps<"/[lang]/about">) =>
@@ -40,12 +40,12 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
       <section className={`${container} flex flex-wrap gap-16 py-32`}>
         <h2 className={`${h2} reveal flex-[1_1_320px]`}>{why.title}</h2>
         <div className="flex flex-[2_1_min(640px,100%)] flex-col gap-7 text-[19px] leading-[1.65] text-body">
-          {why.paragraphs.map((p, i) => (
-            <p key={p} className="reveal m-0" style={stagger(i)}>
+          {why.paragraphs.map((p) => (
+            <p key={p} className="reveal m-0">
               {p}
             </p>
           ))}
-          <p className="reveal m-0 font-medium text-ink" style={stagger(why.paragraphs.length)}>
+          <p className="reveal m-0 font-medium text-ink">
             {why.conclusion}
           </p>
         </div>
@@ -58,7 +58,6 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
             {different.items.map((item, i) => (
               <div
                 key={item.title}
-                style={stagger(i % 3)}
                 className={`reveal pt-5 ${i < 3 ? "draw border-t-2 border-ink" : "border-t border-rule"}`}
               >
                 <h3 className="m-0 mb-2 text-xl font-semibold">{item.title}</h3>
@@ -77,7 +76,7 @@ export default async function About({ params }: PageProps<"/[lang]/about">) {
           sizes="(min-width: 1400px) 685px, (min-width: 900px) 48vw, 100vw"
           className={`${photo} reveal-img aspect-[4/3] min-w-0 flex-[1_1_min(420px,100%)]`}
         />
-        <div className="reveal flex-[1_1_min(420px,100%)] [--i:1]">
+        <div className="reveal flex-[1_1_min(420px,100%)]">
           <h2 className={`${h2} mb-4.5`}>{vetting.title}</h2>
           <p className="m-0 mb-6 max-w-[50ch] text-[17px] leading-[1.65] text-body">{vetting.text}</p>
           <ul className="m-0 grid list-none grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-3.5 p-0">

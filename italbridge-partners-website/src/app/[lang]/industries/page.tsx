@@ -6,7 +6,7 @@ import { href } from "@/site";
 import CtaBand from "@/components/page/CtaBand";
 import IndustryPicker from "@/components/page/IndustryPicker";
 import PageHeader from "@/components/page/PageHeader";
-import { container, h2, stagger } from "@/components/ui";
+import { container, h2 } from "@/components/ui";
 import { images } from "@/images";
 
 export const generateMetadata = ({ params }: PageProps<"/[lang]/industries">) =>
@@ -51,8 +51,8 @@ export default async function Industries({ params }: PageProps<"/[lang]/industri
             <p className="m-0 max-w-[48ch] leading-[1.65] text-mist">{network.text}</p>
           </div>
           <ul className="m-0 grid flex-[1.3_1_min(480px,100%)] list-none grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-3 p-0">
-            {network.categories.map((c, i) => (
-              <li key={c} className="reveal rounded-lg bg-panel p-5 font-medium" style={stagger(i)}>
+            {network.categories.map((c) => (
+              <li key={c} className="reveal rounded-lg bg-panel p-5 font-medium">
                 {c}
               </li>
             ))}

@@ -7,7 +7,7 @@ import EnquiryForm from "@/components/page/EnquiryForm";
 import FormSection from "@/components/page/FormSection";
 import RequirementChecklist from "@/components/page/RequirementChecklist";
 import SplitHero from "@/components/page/SplitHero";
-import { container, h2, stagger } from "@/components/ui";
+import { container, h2 } from "@/components/ui";
 import { images } from "@/images";
 
 export const generateMetadata = ({ params }: PageProps<"/[lang]/buyers">) =>
@@ -43,7 +43,6 @@ export default async function Buyers({ params }: PageProps<"/[lang]/buyers">) {
             {reasons.items.map((item, i) => (
               <div
                 key={item.title}
-                style={stagger(i % 2)}
                 className={`reveal pt-4.5 ${i < 2 ? "draw border-t-2 border-cream [--draw:var(--color-cream)]" : "border-t border-rule-night"}`}
               >
                 <h3 className="m-0 mb-2 text-[19px] font-semibold">{item.title}</h3>

@@ -47,8 +47,8 @@ export default function PageHeader({
         {crumb}
       </Breadcrumb>
       <div className="flex flex-wrap items-end gap-12">
-        <h1 className={`${h1} enter flex-[3_1_min(600px,100%)] [--i:1]`}>{title}</h1>
-        <p className="enter m-0 flex-[2_1_min(340px,100%)] text-lg leading-[1.65] text-body [--i:2]">
+        <h1 className={`${h1} enter flex-[3_1_min(600px,100%)]`}>{title}</h1>
+        <p className="enter m-0 flex-[2_1_min(340px,100%)] text-lg leading-[1.65] text-body">
           {text}
         </p>
       </div>

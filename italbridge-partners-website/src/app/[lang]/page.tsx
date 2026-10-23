@@ -8,7 +8,7 @@ import CountUp from "@/components/CountUp";
 import AudienceHero from "@/components/home/AudienceHero";
 import CtaBand from "@/components/page/CtaBand";
 import { ArrowLabel, CheckList } from "@/components/page/icons";
-import { buttonCream, buttonInk, container, h2Large, photo, stagger, stat, textLink } from "@/components/ui";
+import { buttonCream, buttonInk, container, h2Large, photo, stat, textLink } from "@/components/ui";
 import { images } from "@/images";
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
@@ -40,8 +40,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             },
           ]}
         />
-        <aside className="enter flex min-w-0 flex-[4_1_min(360px,100%)] flex-col gap-6.5 rounded-[10px] bg-night p-9 text-cream [--i:2]">
-          <Image src={images.logo} alt={card.logoAlt} width={92} height={77} loading="eager" className="h-[77px] w-[92px]" />
+        <aside className="enter flex min-w-0 flex-[4_1_min(360px,100%)] flex-col gap-6.5 rounded-[10px] bg-night p-9 text-cream">
+          <Image src={images.logo} alt={card.logoAlt} width={92} height={77} preload fetchPriority="high" className="h-[77px] w-[92px]" />
           <div>
             <p className="m-0 mb-2 text-sm text-[#a3a9b4]">{card.label}</p>
             <div className="flex flex-wrap items-baseline gap-x-3.5">
@@ -86,8 +86,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             </Link>
           </div>
           <div className="grid flex-[3_1_min(760px,100%)] grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-x-8 gap-y-9">
-            {numbers.items.map((item, i) => (
-              <div key={item.value} className="reveal draw border-t-2 border-ink pt-4" style={stagger(i)}>
+            {numbers.items.map((item) => (
+              <div key={item.value} className="reveal draw border-t-2 border-ink pt-4">
                 <div className={stat}>
                   <CountUp value={item.value} />
                 </div>
@@ -108,7 +108,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             {audiences.manufacturers.cta}
           </Link>
         </article>
-        <article style={stagger(1)} className="reveal lift flex flex-[1_1_min(400px,100%)] flex-col gap-5 rounded-[10px] bg-night p-8 text-cream sm:p-11">
+        <article className="reveal lift flex flex-[1_1_min(400px,100%)] flex-col gap-5 rounded-[10px] bg-night p-8 text-cream sm:p-11">
           <h2 className="m-0 text-[30px] font-semibold tracking-[-0.03em]">{audiences.buyers.title}</h2>
           <p className="m-0 max-w-[52ch] leading-relaxed text-mist">{audiences.buyers.text}</p>
           <CheckList items={audiences.buyers.points} iconClass="stroke-ice" />
@@ -128,7 +128,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           </div>
           <ol className="m-0 grid list-none grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-x-6 gap-y-8 p-0">
             {stages.items.map((item, i) => (
-              <li key={item.title} className="reveal draw border-t-[3px] border-ink pt-5 [--bw:3px]" style={stagger(i)}>
+              <li key={item.title} className="reveal draw border-t-[3px] border-ink pt-5 [--bw:3px]">
                 <span className="text-sm font-semibold text-sub">
                   {stage} {i + 1}
                 </span>
@@ -147,7 +147,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </div>
         <ul className="draw m-0 flex-[2_1_min(640px,100%)] list-none border-t border-ink p-0 [--bw:1px]">
           {industries.items.map((item, i) => (
-            <li key={item.title} className="reveal" style={stagger(i)}>
+            <li key={item.title} className="reveal">
               <Link
                 href={`${href(lang, "industries")}?industry=${i + 1}`}
                 className="idx flex flex-wrap justify-between gap-x-6 gap-y-2 border-b border-line px-2 py-6 hover:bg-chip"

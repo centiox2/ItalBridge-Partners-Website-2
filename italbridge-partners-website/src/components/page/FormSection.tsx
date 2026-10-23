@@ -33,7 +33,7 @@ export default function FormSection({
             </a>
           </p>
         </div>
-        <div className={`reveal min-w-0 flex-[1.4_1_min(480px,100%)] rounded-xl p-6 [--i:1] sm:p-10 ${tinted ? "bg-card" : "bg-paper"}`}>
+        <div className={`reveal min-w-0 flex-[1.4_1_min(480px,100%)] rounded-xl p-6 sm:p-10 ${tinted ? "bg-card" : "bg-paper"}`}>
           {children}
         </div>
       </div>

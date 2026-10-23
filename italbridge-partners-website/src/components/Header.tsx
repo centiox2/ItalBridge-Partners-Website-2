@@ -64,7 +64,7 @@ export default function Header({
             className="flex shrink-0 items-center gap-2.5 text-[15px] font-semibold tracking-[-0.01em] min-[380px]:gap-3 min-[380px]:text-lg"
           >
             <span className="flex size-9 items-center justify-center rounded-md bg-night min-[380px]:size-[42px]">
-              <Image src={images.logo} alt="" width={29} height={24} loading="eager" className="h-auto w-[29px]" />
+              <Image src={images.logo} alt="" width={29} height={24} preload className="h-auto w-[29px]" />
             </span>
             ItalBridge Partners
           </Link>

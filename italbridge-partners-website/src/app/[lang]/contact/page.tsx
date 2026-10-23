@@ -33,11 +33,11 @@ export default async function Contact({ params }: PageProps<"/[lang]/contact">) 
         <Breadcrumb lang={lang} nav={nav}>
           {nav.contact}
         </Breadcrumb>
-        <h1 className="enter m-0 mb-5 text-[clamp(40px,4.4vw,60px)] leading-[1.03] font-semibold tracking-[-0.04em] [--i:1]">
+        <h1 className="enter m-0 mb-5 text-[clamp(40px,4.4vw,60px)] leading-[1.03] font-semibold tracking-[-0.04em]">
           {hero.title}
         </h1>
-        <p className="enter m-0 mb-10 max-w-[46ch] text-lg leading-[1.65] text-body [--i:2]">{hero.text}</p>
-        <div className="enter grid grid-cols-[repeat(auto-fit,minmax(min(100%,280px),1fr))] gap-3 [--i:3]">
+        <p className="enter m-0 mb-10 max-w-[46ch] text-lg leading-[1.65] text-body">{hero.text}</p>
+        <div className="enter grid grid-cols-[repeat(auto-fit,minmax(min(100%,280px),1fr))] gap-3">
           {cards.map((c) => (
             <a key={c.href} href={c.href} className="lift block min-w-0 rounded-[10px] bg-paper p-5.5 hover:bg-chip-hover">
               <span className="block text-sm text-sub">{c.label}</span>

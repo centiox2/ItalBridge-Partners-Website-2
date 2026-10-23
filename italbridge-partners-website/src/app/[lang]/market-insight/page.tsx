@@ -78,7 +78,7 @@ export default async function MarketInsight({ params }: PageProps<"/[lang]/marke
           </div>
           <div className="flex flex-[1.6_1_min(560px,100%)] flex-col gap-10">
             {position.charts.map((chart, i) => (
-              <figure key={chart.title} className="reveal" style={stagger(i)}>
+              <figure key={chart.title} className="reveal">
                 <figcaption className="mb-3.5 font-semibold">{chart.title}</figcaption>
                 <div className="flex h-11 gap-0.5">
                   <div
@@ -116,7 +116,7 @@ export default async function MarketInsight({ params }: PageProps<"/[lang]/marke
 
       <section className={`${container} py-28`}>
         <h2 className={`${h2} reveal mb-8`}>{sources.title}</h2>
-        <div className="reveal overflow-x-auto rounded-[10px] border border-line [--i:1]">
+        <div className="reveal overflow-x-auto rounded-[10px] border border-line">
           <table className="w-full min-w-[640px] border-collapse text-left text-[15px]">
             <thead>
               <tr className="bg-paper">

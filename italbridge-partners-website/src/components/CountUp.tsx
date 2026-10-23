@@ -1,21 +1,25 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 
 const duration = 1400;
 
 // Counts the number inside a figure ("€117M", "+94,8%", "KSh 139.1B") up from
 // zero when it scrolls into view, keeping its prefix, suffix, decimals and
-// decimal separator. Screen readers get the final figure only.
+// decimal separator. A figure already on screen when the page opens stays as
+// it is: resetting a number the visitor can already read would make it jump.
+// Screen readers get the final figure only.
 export default function CountUp({ value }: { value: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const shown = useRef<HTMLSpanElement>(null);
 
-  useEffect(() => {
+  // Before paint, so a figure below the fold never shows its final value first.
+  useLayoutEffect(() => {
     const match = /\d+(?:[.,]\d+)?/.exec(value);
     const el = ref.current;
     const text = shown.current;
     if (!match || !el || !text || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (el.getBoundingClientRect().top < window.innerHeight) return;
 
     const [whole, fraction = ""] = match[0].split(/[.,]/);
     const separator = match[0].includes(",") ? "," : ".";

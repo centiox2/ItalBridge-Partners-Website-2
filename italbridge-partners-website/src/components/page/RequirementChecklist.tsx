@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { h2, stagger } from "../ui";
+import { h2 } from "../ui";
 
 // Buyers page: tick off what you already know; a meter shows how ready the requirement is.
 export default function RequirementChecklist({
@@ -41,7 +41,7 @@ export default function RequirementChecklist({
         {items.map((item, i) => {
           const on = ticked[i];
           return (
-            <li key={item.title} className="reveal" style={stagger(i)}>
+            <li key={item.title} className="reveal">
               <button
                 type="button"
                 aria-pressed={on}

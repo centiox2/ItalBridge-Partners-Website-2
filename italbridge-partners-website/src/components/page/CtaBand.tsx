@@ -24,7 +24,7 @@ export default function CtaBand({
         <h2 className={`${large ? h2Large : h2} mb-3.5`}>{title}</h2>
         <p className={`m-0 max-w-[52ch] leading-relaxed ${dark ? "text-mist" : "text-body"}`}>{text}</p>
       </div>
-      <div className="reveal flex flex-wrap gap-3 [--i:1]">
+      <div className="reveal flex flex-wrap gap-3">
         <Link href={primary.href} className={`${dark ? buttonCream : buttonInk} ${sizeLg}`}>
           {primary.label}
         </Link>

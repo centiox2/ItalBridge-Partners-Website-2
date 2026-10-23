@@ -34,9 +34,9 @@ export default function SplitHero({
         <Breadcrumb lang={lang} nav={nav}>
           {crumb}
         </Breadcrumb>
-        <h1 className={`${h1} enter max-w-[720px] [--i:1]`}>{title}</h1>
-        <p className="enter mt-6.5 mb-0 max-w-[54ch] text-[19px] leading-[1.6] text-body [--i:2]">{text}</p>
-        <div className="enter mt-9 flex flex-wrap gap-3 [--i:3]">
+        <h1 className={`${h1} enter max-w-[720px]`}>{title}</h1>
+        <p className="enter mt-6.5 mb-0 max-w-[54ch] text-[19px] leading-[1.6] text-body">{text}</p>
+        <div className="enter mt-9 flex flex-wrap gap-3">
           <Link href={primary.href} className={`${buttonInk} ${sizeMd}`}>
             {primary.label}
           </Link>
