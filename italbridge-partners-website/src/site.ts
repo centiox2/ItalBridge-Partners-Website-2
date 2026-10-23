@@ -1,8 +1,12 @@
 import type { Locale } from "@/i18n";
 
-// Public URL of the site, used for canonical and hreflang links.
+// Public URL of the site, used for canonical and hreflang links, link
+// previews, robots.txt and the sitemap. Set NEXT_PUBLIC_SITE_URL to override;
+// on Vercel it defaults to the project's production domain (the custom domain
+// once one is connected), so those links point at the site that serves them.
+const vercelUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://italbridgepartners.co.ke";
+  process.env.NEXT_PUBLIC_SITE_URL ?? (vercelUrl ? `https://${vercelUrl}` : "https://italbridgepartners.co.ke");
 
 export const contact = {
   emails: ["info@italbridgepartners.co.ke", "sales@italbridgepartners.co.ke"],

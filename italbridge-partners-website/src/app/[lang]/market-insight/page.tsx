@@ -116,24 +116,26 @@ export default async function MarketInsight({ params }: PageProps<"/[lang]/marke
 
       <section className={`${container} py-16 sm:py-28`}>
         <h2 className={`${h2} reveal mb-8`}>{sources.title}</h2>
-        {/* On phones each row is a small card, its cells labelled with the column names. */}
+        {/* On phones each row is a small card, its cells labelled with the column names.
+            The explicit roles keep it a table for screen readers once it is restyled. */}
         <div className="reveal overflow-x-auto rounded-[10px] border border-line">
-          <table className="w-full border-collapse text-left text-[15px] max-sm:block sm:min-w-[640px]">
-            <thead className="max-sm:sr-only">
-              <tr className="bg-paper">
+          <table role="table" className="w-full border-collapse text-left text-[15px] max-sm:block sm:min-w-[640px]">
+            <thead role="rowgroup" className="max-sm:sr-only">
+              <tr role="row" className="bg-paper">
                 {sources.head.map((h) => (
-                  <th key={h} scope="col" className="px-4.5 py-3.5 font-medium text-sub">
+                  <th key={h} role="columnheader" scope="col" className="px-4.5 py-3.5 font-medium text-sub">
                     {h}
                   </th>
                 ))}
               </tr>
             </thead>
-            <tbody className="max-sm:block">
+            <tbody role="rowgroup" className="max-sm:block">
               {sources.rows.map((row) => (
-                <tr key={row[0]} className="border-t border-line max-sm:block max-sm:px-4.5 max-sm:py-4 max-sm:first:border-t-0">
+                <tr key={row[0]} role="row" className="border-t border-line max-sm:block max-sm:px-4.5 max-sm:py-4 max-sm:first:border-t-0">
                   {row.map((cell, i) => (
                     <td
                       key={i}
+                      role="cell"
                       data-label={sources.head[i]}
                       className={`px-4.5 py-3.5 max-sm:block max-sm:p-0 ${
                         i === 0
