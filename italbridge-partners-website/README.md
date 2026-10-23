@@ -74,8 +74,8 @@ are tokens in `src/app/globals.css`, each defined once per theme:
   for use on `night`.
 
 Use the tokens (e.g. `bg-paper`, `text-body`) rather than hex values, so both
-themes stay right. The header button stores the visitor's choice; until then
-the site follows the device setting (`src/theme.ts`). The font is Geist
+themes stay right. The site opens in light mode; the header button switches
+to dark and remembers the choice (`src/theme.ts`). The font is Geist
 (`font-sans`). Button colours and sizes are combined from `src/components/ui.ts`,
 e.g. `` `${buttonInk} ${sizeMd}` ``.
 

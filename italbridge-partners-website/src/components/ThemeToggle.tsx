@@ -12,7 +12,7 @@ function subscribe(onChange: () => void) {
 const isDark = () => document.documentElement.dataset.theme === "dark";
 
 // Header button that switches between light and dark mode. The choice is kept
-// for later visits; until then the site follows the device setting.
+// for later visits; until then the site is light.
 export default function ThemeToggle({ toDark, toLight }: { toDark: string; toLight: string }) {
   const dark = useSyncExternalStore(subscribe, isDark, () => false);
 

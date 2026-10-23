@@ -73,39 +73,9 @@
   --btn-hover: #3a4458;
 }
 
-/* Dark palette: navy grounds, cream ink. The head script in layout.tsx sets
-   data-theme from the visitor's choice or device setting; without JavaScript
-   the media query follows the device setting. */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --page: #0e131b;
-    --paper: #151b25;
-    --card: #1b2230;
-    --chip: #1f2734;
-    --chip-hover: #283244;
-    --pill: #2b3547;
-    --toggle: #10151d;
-    --line: #252e3c;
-    --line-strong: #313b4b;
-    --rule: #36404f;
-    --field: #3b4656;
-    --track: #232c3a;
-    --bar-rest: #4a5568;
-    --ink: #ebe8da;
-    --hover: #ffffff;
-    --body: #c3c8d1;
-    --sub: #a7aebb;
-    --faint: #8f97a5;
-    --error: #ff8a80;
-    --night: #1a2230;
-    --ink-deep: #0a0e14;
-    --btn: #ebe8da;
-    --btn-fg: #151b26;
-    --btn-hover: #ffffff;
-  }
-}
-
+/* Dark palette: navy grounds, cream ink. Light is the default; the head
+   script in layout.tsx sets data-theme="dark" only when the visitor has
+   chosen dark with the header button. */
 :root[data-theme="dark"] {
   color-scheme: dark;
   --page: #0e131b;
