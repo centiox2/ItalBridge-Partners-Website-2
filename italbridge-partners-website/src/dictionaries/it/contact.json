@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "title": "Contatti",
+    "description": "Prenotate una consulenza con ItalBridge Partners a Nairobi. Scrivete a info@ o sales@italbridgepartners.co.ke o chiamate lo 0729 324 033."
+  },
+  "hero": {
+    "title": "Prenotate una consulenza.",
+    "text": "Condividete esigenze, macchinari o obiettivi di mercato in una sola conversazione con un unico partner responsabile."
+  },
+  "details": {
+    "general": "Informazioni generali",
+    "sales": "Vendite e richieste",
+    "phone": "Telefono",
+    "imageAlt": "Skyline di Nairobi",
+    "caption": "Nairobi, Kenya"
+  },
+  "form": {
+    "audience": "Sono",
+    "manufacturer": "Un produttore italiano",
+    "buyer": "Un acquirente dell'Africa orientale",
+    "manufacturerHint": "La vostra gamma di prodotti, capacità ed esperienza di export.",
+    "buyerHint": "Tipo di macchinario, produzione, volumi e tempi.",
+    "other": "Altro",
+    "message": "Come possiamo aiutarvi?",
+    "messageError": "Una o due frasi ci aiutano a prepararci.",
+    "submit": "Richiedi la consulenza",
+    "sent": "Richiesta pronta: si sta aprendo la vostra app di posta.",
+    "subject": "Richiesta di consulenza"
+  }
+}

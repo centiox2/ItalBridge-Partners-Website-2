@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Per i produttori",
+    "description": "Entrate in Kenya e in Africa orientale senza aprire una sede locale. ItalBridge Partners trova acquirenti qualificati, struttura gli accordi e coordina consegna e post-vendita da Nairobi."
+  },
+  "hero": {
+    "crumbNote": "",
+    "title": "Entrate in Africa orientale senza aprire una sede locale.",
+    "text": "Siamo la vostra presenza commerciale in Kenya e nella regione: troviamo acquirenti qualificati, strutturiamo gli accordi e coordiniamo consegna e post-vendita da Nairobi.",
+    "primary": "Diventate partner di ItalBridge",
+    "secondary": "Vedi i dati di mercato",
+    "imageAlt": "Mandrino di una macchina CNC al lavoro"
+  },
+  "benefits": {
+    "title": "Cosa ottenete.",
+    "items": [
+      {
+        "title": "Domanda qualificata",
+        "text": "Acquirenti con reali esigenze di macchinari, verificati per capacità e tempi prima della vostra offerta."
+      },
+      {
+        "title": "Capitolati tecnici chiari",
+        "text": "Specifiche, volumi e vincoli valutati e messi per iscritto, così potete rispondere rapidamente."
+      },
+      {
+        "title": "Trattative gestite",
+        "text": "Negoziazione, termini di pagamento e clausole contrattuali coordinati con l'acquirente."
+      },
+      {
+        "title": "Post-vendita locale",
+        "text": "Installazione, ricambi e richieste di assistenza coordinati a Nairobi per vostro conto."
+      }
+    ]
+  },
+  "numbers": {
+    "title": "L'opportunità, in numeri.",
+    "text": "Nel 3° trimestre 2025 la spesa keniota in macchinari industriali è cresciuta del 94,8% su base annua. Nelle macchine per l'imballaggio l'Italia detiene già il 14,5% di un mercato da 117 milioni di euro.",
+    "link": "Leggi tutti i dati di mercato →",
+    "items": [
+      {
+        "value": "+94,8%",
+        "text": "Macchinari industriali KE, 3° trim. 2025"
+      },
+      {
+        "value": "117 M€",
+        "text": "Macchine per imballaggio KE, 2024"
+      },
+      {
+        "value": "6",
+        "text": "mercati serviti da Nairobi"
+      }
+    ]
+  },
+  "steps": {
+    "title": "Come inizia una partnership.",
+    "label": "Passo",
+    "items": [
+      {
+        "title": "Presentate la vostra gamma",
+        "text": "Condividete prodotti, capacità ed esperienza di export."
+      },
+      {
+        "title": "Valutiamo l'idoneità",
+        "text": "Capacità tecnica e produttiva, qualità, preparazione all'export."
+      },
+      {
+        "title": "Portiamo acquirenti qualificati",
+        "text": "Con esigenze valutate e capitolati chiari."
+      },
+      {
+        "title": "Consegniamo e assistiamo",
+        "text": "Accordo, logistica, dogana e post-vendita."
+      }
+    ]
+  },
+  "form": {
+    "title": "Diventate partner di ItalBridge.",
+    "text": "Raccontateci la vostra azienda e la vostra gamma. Vi daremo un parere sulle prospettive in Africa orientale.",
+    "category": "Categoria di prodotto",
+    "categories": [
+      "Macchinari industriali",
+      "Automazione e sistemi di controllo",
+      "Meccanica di precisione",
+      "Macchine per l'industria alimentare",
+      "Tecnologie per l'imballaggio",
+      "Componenti industriali"
+    ],
+    "message": "La vostra gamma",
+    "messageHint": "Prodotti, capacità, mercati di export finora.",
+    "messageError": "Una breve descrizione ci aiuta a valutare l'idoneità.",
+    "submit": "Invia la richiesta di partnership",
+    "sent": "Grazie: si sta aprendo la vostra app di posta.",
+    "subject": "Partnership produttore"
+  }
+}

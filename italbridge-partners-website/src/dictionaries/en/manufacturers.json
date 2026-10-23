@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "For manufacturers",
+    "description": "Enter Kenya and East Africa without opening a local office. ItalBridge Partners finds qualified buyers, structures deals and coordinates delivery and after-sales from Nairobi."
+  },
+  "hero": {
+    "crumbNote": "Per i produttori italiani",
+    "title": "Enter East Africa without opening a local office.",
+    "text": "We act as your commercial presence in Kenya and the region — finding qualified buyers, structuring deals and coordinating delivery and after-sales from Nairobi.",
+    "primary": "Partner with ItalBridge",
+    "secondary": "See the market data",
+    "imageAlt": "CNC machining spindle at work"
+  },
+  "benefits": {
+    "title": "What you get.",
+    "items": [
+      {
+        "title": "Qualified demand",
+        "text": "Buyers with real equipment needs, checked for capacity and timelines before you quote."
+      },
+      {
+        "title": "Clear technical briefs",
+        "text": "Specifications, volumes and constraints assessed and written up so you can respond quickly."
+      },
+      {
+        "title": "Deals handled",
+        "text": "Negotiation, payment terms and contract conditions coordinated with the buyer."
+      },
+      {
+        "title": "Local after-sales",
+        "text": "Installation, spare parts and service questions coordinated in Nairobi on your behalf."
+      }
+    ]
+  },
+  "numbers": {
+    "title": "The opportunity, in numbers.",
+    "text": "Kenya's industrial machinery spending rose 94.8% year on year in Q3 2025. In packaging machinery, Italy already holds 14.5% of a €117M market.",
+    "link": "Read the full market insight →",
+    "items": [
+      {
+        "value": "+94.8%",
+        "text": "KE industrial machinery, Q3 2025"
+      },
+      {
+        "value": "€117M",
+        "text": "KE packaging machinery, 2024"
+      },
+      {
+        "value": "6",
+        "text": "markets from Nairobi"
+      }
+    ]
+  },
+  "steps": {
+    "title": "How a partnership starts.",
+    "label": "Step",
+    "items": [
+      {
+        "title": "Introduce your range",
+        "text": "Share your products, capacity and export experience."
+      },
+      {
+        "title": "We assess fit",
+        "text": "Capability, capacity, quality and export readiness."
+      },
+      {
+        "title": "We bring qualified buyers",
+        "text": "With assessed needs and clear briefs."
+      },
+      {
+        "title": "We deliver and support",
+        "text": "Deal, logistics, customs and after-sales."
+      }
+    ]
+  },
+  "form": {
+    "title": "Partner with ItalBridge.",
+    "text": "Tell us about your company and range. We'll come back with a view on fit for East Africa.",
+    "category": "Product category",
+    "categories": [
+      "Industrial machinery",
+      "Automation and control systems",
+      "Precision engineering",
+      "Food processing equipment",
+      "Packaging technologies",
+      "Industrial components"
+    ],
+    "message": "About your range",
+    "messageHint": "Products, capacity, export markets so far.",
+    "messageError": "A short description helps us assess fit.",
+    "submit": "Send partnership enquiry",
+    "sent": "Grazie — your email app is opening.",
+    "subject": "Manufacturer partnership"
+  }
+}

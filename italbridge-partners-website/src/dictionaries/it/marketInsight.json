@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "title": "Dati di mercato",
+    "description": "Le importazioni keniote di macchinari e beni strumentali, la quota italiana delle importazioni di macchine per l'imballaggio in Kenya e l'export italiano verso il Kenya, con le fonti."
+  },
+  "hero": {
+    "title": "Il Kenya compra sempre più macchinari. L'Italia ne costruisce tra i migliori.",
+    "text": "I numeri dietro l'opportunità, con le relative fonti. Passate sopra una barra per vederne il valore."
+  },
+  "imports": {
+    "title": "Kenya: importazioni di macchinari e beni strumentali, 3° trimestre",
+    "unit": "Miliardi di KSh · KNBS, bilancia dei pagamenti 3° trim. 2025",
+    "bars": [
+      {
+        "label": "3° trim. 2024",
+        "value": "96,3",
+        "tip": "3° trim. 2024 · KSh 96,3 mld",
+        "aria": "3° trimestre 2024: 96,3 miliardi di KSh"
+      },
+      {
+        "label": "3° trim. 2025",
+        "value": "139,1",
+        "tip": "3° trim. 2025 · KSh 139,1 mld (+44%)",
+        "aria": "3° trimestre 2025: 139,1 miliardi di KSh"
+      }
+    ],
+    "note": "Circa +44% in un anno. La sola spesa in macchinari industriali è cresciuta del 94,8%."
+  },
+  "stats": [
+    {
+      "value": "+94,8%",
+      "text": "Spesa keniota in macchinari industriali, 3° trim. 2025 rispetto al 3° trim. 2024."
+    },
+    {
+      "value": "9+ mld €",
+      "text": "Fatturato italiano delle macchine per l'imballaggio; circa l'80% è esportato."
+    }
+  ],
+  "position": {
+    "title": "La posizione dell'Italia in Kenya.",
+    "text": "Nelle macchine per l'imballaggio l'Italia è già il terzo fornitore. I macchinari nel complesso valgono circa un terzo di ciò che l'Italia esporta in Kenya.",
+    "charts": [
+      {
+        "title": "Importazioni keniote di macchine per l'imballaggio, 2024: 117 M€",
+        "part": {
+          "tip": "Italia · 17 M€ · 14,5%",
+          "aria": "Italia: 17 milioni di euro, 14,5 per cento",
+          "legend": "Italia: 17 M€, terza dopo India e Cina"
+        },
+        "rest": {
+          "tip": "Tutti gli altri fornitori · 100 M€",
+          "aria": "Tutti gli altri fornitori: 100 milioni di euro",
+          "legend": "Tutti gli altri fornitori"
+        }
+      },
+      {
+        "title": "Export italiano verso il Kenya, 2024: ~154 M$",
+        "part": {
+          "tip": "Macchinari · ~55 M$",
+          "aria": "Macchinari: circa 55 milioni di dollari",
+          "legend": "Macchinari: circa un terzo"
+        },
+        "rest": {
+          "tip": "Altri beni · ~99 M$",
+          "aria": "Altri beni: circa 99 milioni di dollari",
+          "legend": "Altri beni"
+        }
+      }
+    ]
+  },
+  "sources": {
+    "title": "Dati e fonti.",
+    "head": [
+      "Indicatore",
+      "Valore",
+      "Fonte"
+    ],
+    "rows": [
+      [
+        "Importazioni keniote di macchinari e beni strumentali, 3° trim. 2024 → 3° trim. 2025",
+        "KSh 96,3 mld → 139,1 mld",
+        "KNBS, tramite Capital FM (gen. 2026)"
+      ],
+      [
+        "Spesa keniota in macchinari industriali, 3° trim. 2025 su anno",
+        "+94,8%",
+        "KNBS, tramite Capital FM (gen. 2026)"
+      ],
+      [
+        "Importazioni keniote di macchine per l'imballaggio, 2024",
+        "117 M€ (+11%)",
+        "ICE/TDM, tramite ANSA (mag. 2025)"
+      ],
+      [
+        "Quota dell'Italia sul dato precedente",
+        "17 M€ · 14,5%",
+        "ICE/TDM, tramite ANSA (mag. 2025)"
+      ],
+      [
+        "Fatturato del settore italiano delle macchine per l'imballaggio",
+        "oltre 9 mld €, ~80% esportato",
+        "ANSA (mag. 2025)"
+      ],
+      [
+        "Export italiano verso il Kenya, di cui macchinari, 2024",
+        "~154 M$, ~55 M$",
+        "Dati export 2024 (stime)"
+      ]
+    ]
+  },
+  "cta": {
+    "title": "Cosa significa per il vostro settore?",
+    "text": "Indicateci il vostro settore e vi illustreremo le prospettive, in una sola conversazione.",
+    "button": "Prenota una consulenza"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "ItalBridge Partners",
+    "description": "ItalBridge Partners aiuta i produttori industriali italiani a vendere in Kenya e in Africa orientale, e gli acquirenti dell'Africa orientale a reperire macchinari italiani, con un unico partner responsabile a Nairobi."
+  },
+  "nav": {
+    "office": "Ufficio di Nairobi · ora dell'Africa orientale (UTC+3)",
+    "about": "Chi siamo",
+    "services": "Servizi",
+    "industries": "Settori",
+    "manufacturers": "Per i produttori",
+    "buyers": "Per gli acquirenti",
+    "marketInsight": "Dati di mercato",
+    "contact": "Contatti",
+    "home": "Home",
+    "language": "Lingua",
+    "logoAlt": "Logo ItalBridge Partners",
+    "homeLabel": "Home di ItalBridge Partners",
+    "cta": "Prenota una consulenza",
+    "menu": "Principale",
+    "breadcrumb": "Percorso",
+    "toDark": "Passa alla modalità scura",
+    "toLight": "Passa alla modalità chiara",
+    "openMenu": "Menu",
+    "closeMenu": "Chiudi",
+    "skip": "Vai al contenuto"
+  },
+  "home": {
+    "audience": {
+      "label": "Sono",
+      "manufacturer": "Sono un produttore italiano",
+      "buyer": "Sono un acquirente dell'Africa orientale"
+    },
+    "manufacturer": {
+      "title": "Vendete in Kenya e in Africa orientale senza aprire una sede locale.",
+      "text": "Troviamo e qualifichiamo gli acquirenti, strutturiamo l'accordo, gestiamo logistica e dogana e restiamo il vostro referente post-vendita a Nairobi.",
+      "primary": "Come lavoriamo con i produttori",
+      "secondary": "Prenota una consulenza"
+    },
+    "buyer": {
+      "title": "Macchinari industriali italiani, con un partner sul posto.",
+      "text": "Indicateci la vostra specifica. Vi mettiamo in contatto con un produttore italiano verificato, negoziamo le condizioni, consegniamo al vostro sito e vi assistiamo dopo la messa in servizio.",
+      "primary": "Come lavoriamo con gli acquirenti",
+      "secondary": "Inviate una richiesta"
+    },
+    "card": {
+      "logoAlt": "Monogramma ItalBridge Partners",
+      "label": "Importazioni keniote di macchinari e beni strumentali, 3° trimestre",
+      "value": "KSh 139,1 mld",
+      "change": "da KSh 96,3 mld un anno prima",
+      "text": "La domanda di macchinari industriali in Kenya cresce rapidamente. La questione è chi porta l'affare dalla specifica all'assistenza.",
+      "link": "Leggi i dati di mercato →"
+    },
+    "photos": {
+      "nairobi": "Skyline di Nairobi",
+      "port": "Nave portacontainer in fase di attracco"
+    },
+    "numbers": {
+      "title": "Il mercato, in quattro numeri.",
+      "link": "Tutti i dati di mercato →",
+      "items": [
+        { "value": "117 M€", "text": "Macchine per imballaggio importate dal Kenya nel 2024, +11%." },
+        { "value": "14,5%", "text": "La quota dell'Italia, terza dopo India e Cina." },
+        { "value": "~55 M$", "text": "Export italiano di macchinari verso il Kenya, circa un terzo di ~154 M$." },
+        { "value": "+94,8%", "text": "Spesa keniota in macchinari industriali, 3° trim. 2025 su anno." }
+      ],
+      "sources": "Fonti: dati ICE/TDM riportati da ANSA (maggio 2025); KNBS 3° trim. 2025; dati export 2024."
+    },
+    "audiences": {
+      "manufacturers": {
+        "title": "Per i produttori italiani",
+        "text": "Una presenza commerciale in Africa orientale senza i costi fissi di una filiale.",
+        "points": [
+          "Acquirenti qualificati, con capacità e tempi reali",
+          "Negoziazione, termini di pagamento e contratti gestiti",
+          "Coordinamento locale di installazione e ricambi"
+        ],
+        "cta": "Diventate partner di ItalBridge"
+      },
+      "buyers": {
+        "title": "Per gli acquirenti dell'Africa orientale",
+        "text": "Ingegneria italiana, con un unico referente responsabile dall'offerta alla messa in servizio.",
+        "points": [
+          "Revisione tecnica della vostra specifica",
+          "Produttori verificati per la capacità di esportare",
+          "Trasporto e dogana fino al vostro sito, poi il post-vendita"
+        ],
+        "cta": "Cercate macchinari"
+      }
+    },
+    "stages": {
+      "title": "Sei fasi, un unico partner responsabile.",
+      "link": "Ogni fase nel dettaglio →",
+      "items": [
+        { "title": "Individuazione degli acquirenti", "text": "Esigenze, capacità e tempi reali." },
+        { "title": "Analisi dei requisiti", "text": "Specifiche, volumi e vincoli." },
+        { "title": "Scelta del produttore", "text": "Da una rete italiana verificata." },
+        { "title": "Struttura dell'accordo", "text": "Prezzo, condizioni, pagamento, contratto." },
+        { "title": "Logistica e dogana", "text": "Dalla fabbrica al sito, sdoganato." },
+        { "title": "Post-vendita", "text": "Installazione, ricambi, assistenza." }
+      ]
+    },
+    "industries": {
+      "title": "I settori che serviamo.",
+      "text": "Le sole macchine italiane per l'imballaggio sono un settore da oltre 9 miliardi di euro che esporta circa l'80% della produzione.",
+      "items": [
+        { "title": "Plastica e imballaggio", "text": "Estrusione, stampaggio, avvolgimento, trasformazione" },
+        { "title": "Alimentare e bevande", "text": "Lavorazione, riempimento, imbottigliamento" },
+        { "title": "Automazione industriale", "text": "Controlli, robotica, integrazione" },
+        { "title": "Meccanica di precisione", "text": "Lavorazioni CNC, utensili" },
+        { "title": "Materiali da costruzione", "text": "Impianti per blocchi, piastrelle, inerti" },
+        { "title": "Aftermarket automotive", "text": "Attrezzature per officina, componenti" }
+      ]
+    },
+    "cta": {
+      "title": "Prenotate una consulenza di 30 minuti.",
+      "text": "Condividete esigenze, macchinari o obiettivi di mercato: una sola conversazione con un unico partner responsabile.",
+      "button": "Prenota una consulenza"
+    }
+  },
+  "stage": "Fase",
+  "footer": {
+    "tagline": "Il ponte commerciale tra l'industria italiana e l'Africa orientale. Nairobi, Kenya.",
+    "company": "Azienda",
+    "work": "Lavora con noi",
+    "contact": "Contatti",
+    "legal": "Note legali",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Condizioni d'uso",
+    "cookies": "Cookie policy",
+    "dataRequest": "Accesso e cancellazione dei dati",
+    "social": "Social media"
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "text": "La pagina che cercate non esiste o è stata spostata.",
+    "cta": "Torna alla home"
+  },
+  "form": {
+    "company": "Azienda",
+    "name": "Nome",
+    "fullName": "Nome e cognome",
+    "email": "Email di lavoro",
+    "phone": "Telefono",
+    "optional": "(facoltativo)",
+    "industry": "Settore",
+    "country": "Paese",
+    "errors": {
+      "company": "Indicate il nome dell'azienda.",
+      "name": "Indicate il vostro nome.",
+      "email": "Inserite un'email valida."
+    },
+    "industries": [
+      "Plastica e imballaggio",
+      "Alimentare e bevande",
+      "Automazione industriale",
+      "Meccanica di precisione",
+      "Materiali da costruzione",
+      "Aftermarket automotive"
+    ],
+    "consent": "Inviando, accettate la nostra",
+    "privacy": "Informativa sulla privacy",
+    "fallback": "Se non si è aperto nulla, scrivete a",
+    "again": "Invia un'altra richiesta",
+    "preferEmail": "Preferite l'email?"
+  },
+  "legal": {
+    "documents": "Documenti legali",
+    "lastUpdated": "Ultimo aggiornamento",
+    "onThisPage": "In questa pagina",
+    "questions": "Domande su questa informativa?",
+    "contactUs": "Scriveteci a"
+  }
+}

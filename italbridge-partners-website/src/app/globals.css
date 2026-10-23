@@ -1,0 +1,481 @@
+@import "tailwindcss";
+
+/* Colour tokens. Theme-dependent ones are variables, set per theme below;
+   the rest are fixed and only ever used on dark surfaces. */
+@theme inline {
+  /* Page and light surfaces. */
+  --color-page: var(--page);
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-chip: var(--chip);
+  --color-chip-hover: var(--chip-hover);
+  --color-pill: var(--pill);
+  --color-toggle: var(--toggle);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-rule: var(--rule);
+  --color-field: var(--field);
+  --color-track: var(--track);
+  --color-bar-rest: var(--bar-rest);
+  /* Ink: text, rules, chart marks and focus rings. Light in dark mode. */
+  --color-ink: var(--ink);
+  --color-hover: var(--hover);
+  --color-body: var(--body);
+  --color-sub: var(--sub);
+  --color-faint: var(--faint);
+  --color-error: var(--error);
+  /* Night: dark surfaces (bands, dark cards, top bar). Dark in both themes. */
+  --color-night: var(--night);
+  --color-ink-deep: var(--ink-deep);
+  /* Primary button. */
+  --color-btn: var(--btn);
+  --color-btn-fg: var(--btn-fg);
+  --color-btn-hover: var(--btn-hover);
+  /* Fixed: text and fills on night surfaces. */
+  --color-mist: #c9cdd4;
+  --color-ice: #c9d2e0;
+  --color-steel: #9aa7bd;
+  --color-panel: #1e2838;
+  --color-panel-raised: #263043;
+  --color-rule-dark: #222b3b;
+  --color-rule-night: #3a4458;
+  --color-cream: #ebe8da;
+  --font-sans: var(--font-geist), system-ui, sans-serif;
+  /* Width at which the header has room for all its links in one row. */
+  --breakpoint-nav: 74rem;
+}
+
+:root {
+  color-scheme: light;
+  --page: #ffffff;
+  --paper: #f6f6f3;
+  --card: #ffffff;
+  --chip: #f1f1ec;
+  --chip-hover: #ecece6;
+  --pill: #ffffff;
+  --toggle: #e9e9e3;
+  --line: #e6e6e1;
+  --line-strong: #dcdcd5;
+  --rule: #cfd2d8;
+  --field: #d3d5d9;
+  --track: #e6e5de;
+  --bar-rest: #cbd1db;
+  --ink: #151b26;
+  --hover: #3a4458;
+  --body: #3a4150;
+  --sub: #4a5160;
+  --faint: #5a6170;
+  --error: #b80f18;
+  --night: #151b26;
+  --ink-deep: #10151e;
+  --btn: #151b26;
+  --btn-fg: #ffffff;
+  --btn-hover: #3a4458;
+}
+
+/* Dark palette: navy grounds, cream ink. The head script in layout.tsx sets
+   data-theme from the visitor's choice or device setting; without JavaScript
+   the media query follows the device setting. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0e131b;
+    --paper: #151b25;
+    --card: #1b2230;
+    --chip: #1f2734;
+    --chip-hover: #283244;
+    --pill: #2b3547;
+    --toggle: #10151d;
+    --line: #252e3c;
+    --line-strong: #313b4b;
+    --rule: #36404f;
+    --field: #3b4656;
+    --track: #232c3a;
+    --bar-rest: #4a5568;
+    --ink: #ebe8da;
+    --hover: #ffffff;
+    --body: #c3c8d1;
+    --sub: #a7aebb;
+    --faint: #8f97a5;
+    --error: #ff8a80;
+    --night: #1a2230;
+    --ink-deep: #0a0e14;
+    --btn: #ebe8da;
+    --btn-fg: #151b26;
+    --btn-hover: #ffffff;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0e131b;
+  --paper: #151b25;
+  --card: #1b2230;
+  --chip: #1f2734;
+  --chip-hover: #283244;
+  --pill: #2b3547;
+  --toggle: #10151d;
+  --line: #252e3c;
+  --line-strong: #313b4b;
+  --rule: #36404f;
+  --field: #3b4656;
+  --track: #232c3a;
+  --bar-rest: #4a5568;
+  --ink: #ebe8da;
+  --hover: #ffffff;
+  --body: #c3c8d1;
+  --sub: #a7aebb;
+  --faint: #8f97a5;
+  --error: #ff8a80;
+  --night: #1a2230;
+  --ink-deep: #0a0e14;
+  --btn: #ebe8da;
+  --btn-fg: #151b26;
+  --btn-hover: #ffffff;
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+/* On dark surfaces the ink ring would vanish (it is the same navy), so use
+   cream there. */
+:is(.bg-night, .bg-ink-deep) :focus-visible {
+  outline-color: var(--color-cream);
+}
+
+/* The skip link moves focus to <main>; no ring around the whole page. */
+main:focus {
+  outline: none;
+}
+
+/* Native <details> marker is replaced by a rotating "+". */
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Hover tooltip on chart bars (Market insight). */
+.tip {
+  position: absolute;
+  left: 12px;
+  top: -38px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+}
+
+.bar:hover .tip,
+.bar:focus .tip {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- Motion ----------
+   Everything that moves only runs when the visitor allows motion.
+
+   Scroll-in effects (.reveal, .draw, .reveal-img, .grow-bar) are armed by
+   Motion.tsx: it sets data-motion on <html> and data-in on each element
+   as it enters the viewport. Elements already on screen at load are marked
+   data-in first, so nothing visible ever disappears. Without JavaScript, or
+   with reduced motion, data-motion is never set and everything stays put.
+   Items that enter together are staggered by --in, their order on screen,
+   which Motion.tsx sets. Nothing moves or hides in print. */
+
+:root {
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  /* Lets <details> animate its height to and from auto. */
+  interpolate-size: allow-keywords;
+}
+
+/* Hero copy only moves; it is never transparent, so it is painted (and
+   counted as loaded) on the very first frame. Fading it in from opacity 0
+   delayed Largest Contentful Paint by about 0.5s on a mid-range phone. */
+@keyframes rise-in {
+  from {
+    transform: translateY(12px);
+  }
+}
+
+/* Large photos at the top of a page: visible from the first paint, they
+   only settle from slightly smaller. */
+@keyframes settle {
+  from {
+    transform: scale(0.97);
+  }
+}
+
+/* Photo inside a clipped frame (tab and picker panels). */
+@keyframes zoom-out {
+  from {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+    transform: scale(0.75);
+  }
+}
+
+@keyframes pop {
+  40% {
+    transform: scale(1.25);
+  }
+}
+
+/* Lines that draw across (.draw) replace their top border with this bar. */
+.draw::before {
+  content: none;
+}
+
+details::details-content {
+  height: 0;
+  overflow: clip;
+}
+
+details[open]::details-content {
+  height: auto;
+}
+
+details[open] .plus {
+  transform: rotate(45deg);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Page-load sequence; stagger with --i. */
+  .enter {
+    animation: rise-in 0.6s var(--ease-out) calc(var(--i, 0) * 70ms) backwards;
+  }
+
+  .settle {
+    animation: settle 1.2s var(--ease-out) backwards;
+  }
+
+  .zoom-out {
+    animation: zoom-out 1.2s var(--ease-out) backwards;
+  }
+
+  /* Panels swapped by a tab or picker; stagger their parts with --i. */
+  .fade {
+    animation: fade 0.5s var(--ease-out) calc(var(--i, 0) * 70ms) both;
+  }
+
+  /* Its own compositor layer, so the endless pulse never needs main-thread
+     style work. */
+  .pulse {
+    animation: pulse 2.4s ease-in-out infinite;
+    will-change: transform, opacity;
+  }
+
+  .pop {
+    animation: pop 0.35s var(--ease-out);
+  }
+
+  /* ----- Scroll-in ----- */
+
+  html[data-motion] .reveal:not([data-in]) {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  html[data-motion] .reveal[data-in] {
+    transition:
+      opacity 0.8s var(--ease-out) calc(var(--in, 0) * 90ms),
+      transform 0.8s var(--ease-out) calc(var(--in, 0) * 90ms),
+      translate 0.4s var(--ease-out),
+      box-shadow 0.4s var(--ease-out);
+  }
+
+  /* Top rules draw from the left. Set the rule's width with --bw and its
+     colour with --draw when they differ from 2px ink. */
+  html[data-motion] .draw {
+    position: relative;
+    border-top-color: transparent;
+  }
+
+  html[data-motion] .draw::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(-1 * var(--bw, 2px));
+    height: var(--bw, 2px);
+    background: var(--draw, var(--color-ink));
+    transform-origin: left;
+  }
+
+  html[data-motion] .draw:not([data-in])::before {
+    transform: scaleX(0);
+  }
+
+  html[data-motion] .draw[data-in]::before {
+    transition: transform 1s var(--ease-in-out) calc(var(--in, 0) * 90ms + 0.1s);
+  }
+
+  /* Photos unveil from the top. */
+  .reveal-img {
+    clip-path: inset(0 0 0 0 round 10px);
+  }
+
+  html[data-motion] .reveal-img:not([data-in]) {
+    clip-path: inset(0 0 100% 0 round 10px);
+    transform: scale(1.06);
+  }
+
+  html[data-motion] .reveal-img[data-in] {
+    transition:
+      clip-path 1.1s var(--ease-in-out),
+      transform 1.6s var(--ease-out);
+  }
+
+  /* Chart bars grow from the left: on load for bars already on screen,
+     on scroll for the rest. */
+  .grow-bar {
+    transform-origin: left center;
+    animation: grow 1.3s var(--ease-out) calc(var(--i, 0) * 150ms + 0.3s) backwards;
+  }
+
+  html[data-motion] .grow-bar:not([data-in]) {
+    transform: scaleX(0);
+  }
+
+  html[data-motion] .grow-bar[data-in] {
+    transition: transform 1.2s var(--ease-out) calc(var(--in, 0) * 150ms);
+  }
+
+  /* ----- Hover ----- */
+
+  .btn {
+    transition:
+      transform 0.3s var(--ease-out),
+      background-color 0.3s;
+  }
+
+  /* Hover movement only where there is a pointer that hovers: on a touch
+     screen it would stick after a tap. */
+  @media (hover: hover) {
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .lift:hover {
+      translate: 0 -4px;
+      box-shadow: 0 22px 40px -26px rgb(21 27 38 / 0.45);
+    }
+
+    a:hover .nudge {
+      transform: translateX(4px);
+    }
+
+    .idx:hover {
+      padding-left: 20px;
+    }
+
+    .group:hover .zoom {
+      transform: scale(1.04);
+    }
+  }
+
+  .btn:active {
+    transform: translateY(1px) scale(0.98);
+  }
+
+  /* Cards rise and cast a soft shadow. */
+  /* Uses translate, not transform, so it combines with .reveal. */
+  .lift {
+    transition:
+      translate 0.4s var(--ease-out),
+      box-shadow 0.4s var(--ease-out);
+  }
+
+  /* The "→" at the end of a link nudges forward. */
+  .nudge {
+    transition: transform 0.3s var(--ease-out);
+  }
+
+  a:focus-visible .nudge {
+    transform: translateX(4px);
+  }
+
+  /* Index rows (home page industries) slide right on hover. */
+  .idx {
+    transition:
+      background-color 0.3s,
+      padding-left 0.4s var(--ease-out);
+  }
+
+  .zoom {
+    transition: transform 0.8s var(--ease-out);
+  }
+
+  .plus {
+    transition: transform 0.35s var(--ease-out);
+  }
+
+  details::details-content {
+    transition:
+      height 0.4s var(--ease-out),
+      content-visibility 0.4s allow-discrete;
+  }
+
+  .meter {
+    transition: width 0.5s var(--ease-out);
+  }
+
+  /* The theme crossfade (ThemeToggle) captures the new colours at once:
+     colour transitions would otherwise play again after it. */
+  html[data-theme-switch] *,
+  html[data-theme-switch] *::before,
+  html[data-theme-switch] *::after {
+    transition: none !important;
+  }
+
+  /* While the theme crossfade runs (ThemeToggle), clicks still reach the page
+     instead of the transition overlay. */
+  ::view-transition {
+    pointer-events: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

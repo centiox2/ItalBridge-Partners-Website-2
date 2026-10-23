@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Settori",
+    "description": "Macchinari italiani per plastica e imballaggio, alimentare e bevande, automazione industriale, meccanica di precisione, materiali da costruzione e aftermarket automotive in Africa orientale."
+  },
+  "hero": {
+    "title": "Macchinari per i settori che muovono l'industria dell'Africa orientale.",
+    "text": "Sei settori, ciascuno servito da produttori italiani verificati e supportato localmente da Nairobi. Selezionatene uno per vedere cosa forniamo."
+  },
+  "pickerLabel": "Settori",
+  "equipment": "Macchinari che forniamo",
+  "categories": "Categorie di produttori",
+  "discuss": "Parliamo di un progetto",
+  "deliver": "Come lavoriamo",
+  "items": [
+    {
+      "name": "Plastica e imballaggio",
+      "body": "Nel 2024 il Kenya ha importato macchine per l'imballaggio per 117 milioni di euro, +11%, di cui il 14,5% dall'Italia, terza dopo India e Cina. Le macchine italiane per l'imballaggio sono un settore da oltre 9 miliardi di euro che esporta circa l'80% della produzione.",
+      "items": [
+        "Linee di riempimento, avvolgimento e form-fill-seal",
+        "Impianti di estrusione e stampaggio",
+        "Macchine per trasformazione ed etichettatura"
+      ],
+      "cats": "Tecnologie per l'imballaggio · Macchinari industriali"
+    },
+    {
+      "name": "Alimentare e bevande",
+      "body": "Macchine per lavorazione, riempimento e imbottigliamento per i produttori alimentari e di bevande in crescita in Kenya e nella regione.",
+      "items": [
+        "Linee di lavorazione",
+        "Riempimento e imbottigliamento",
+        "Trasporto e movimentazione"
+      ],
+      "cats": "Macchine per l'industria alimentare · Tecnologie per l'imballaggio"
+    },
+    {
+      "name": "Automazione industriale",
+      "body": "Sistemi di controllo, robotica e integrazione da specialisti italiani dell'automazione, adattati alle linee produttive esistenti.",
+      "items": [
+        "Celle robotizzate e movimentazione",
+        "Sistemi di controllo e PLC",
+        "Integrazione di linea"
+      ],
+      "cats": "Automazione e sistemi di controllo"
+    },
+    {
+      "name": "Meccanica di precisione",
+      "body": "Centri di lavoro CNC, utensili e componenti per officine di carpenteria e reparti di manutenzione.",
+      "items": [
+        "Centri di lavoro CNC",
+        "Utensili e attrezzature",
+        "Ricambi e parti soggette a usura"
+      ],
+      "cats": "Meccanica di precisione · Componenti industriali"
+    },
+    {
+      "name": "Materiali da costruzione",
+      "body": "Impianti e macchinari per il settore dei materiali da costruzione, in una regione che costruisce a ritmo sostenuto.",
+      "items": [
+        "Impianti per blocchi e piastrelle",
+        "Lavorazione degli inerti",
+        "Miscelazione e movimentazione"
+      ],
+      "cats": "Macchinari industriali"
+    },
+    {
+      "name": "Aftermarket automotive",
+      "body": "Attrezzature per officina e componenti per aziende di assistenza, riparazione e ricambi.",
+      "items": [
+        "Attrezzature per officina",
+        "Componenti e ricambi",
+        "Lavorazioni meccaniche per la riparazione"
+      ],
+      "cats": "Componenti industriali · Meccanica di precisione"
+    }
+  ],
+  "network": {
+    "title": "La nostra rete di produttori.",
+    "text": "Ogni produttore è verificato per capacità tecnica, capacità produttiva, qualità e preparazione all'export. La rete copre sei categorie.",
+    "categories": [
+      "Macchinari industriali",
+      "Automazione e sistemi di controllo",
+      "Meccanica di precisione",
+      "Macchine per l'industria alimentare",
+      "Tecnologie per l'imballaggio",
+      "Componenti industriali"
+    ]
+  },
+  "cta": {
+    "title": "Non trovate il vostro macchinario?",
+    "text": "Diteci di cosa avete bisogno. Se è costruito in Italia, di solito troviamo il produttore giusto.",
+    "button": "Inviate una richiesta"
+  }
+}

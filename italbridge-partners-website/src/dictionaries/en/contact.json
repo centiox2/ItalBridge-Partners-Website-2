@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "title": "Contact",
+    "description": "Book a consultation with ItalBridge Partners in Nairobi. Email info@ or sales@italbridgepartners.co.ke or call 0729 324 033."
+  },
+  "hero": {
+    "title": "Book a consultation.",
+    "text": "Share your requirements, machinery or market goals in one conversation with one accountable partner."
+  },
+  "details": {
+    "general": "General enquiries",
+    "sales": "Sales and requirements",
+    "phone": "Phone",
+    "imageAlt": "Nairobi city skyline",
+    "caption": "Nairobi, Kenya"
+  },
+  "form": {
+    "audience": "I am",
+    "manufacturer": "An Italian manufacturer",
+    "buyer": "An East African buyer",
+    "manufacturerHint": "Your product range, capacity and export experience.",
+    "buyerHint": "Equipment type, output, volumes and timeline.",
+    "other": "Other",
+    "message": "How can we help?",
+    "messageError": "A sentence or two helps us prepare.",
+    "submit": "Request consultation",
+    "sent": "Request ready — your email app is opening.",
+    "subject": "Consultation request"
+  }
+}

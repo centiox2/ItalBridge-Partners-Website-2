@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "About",
+    "description": "ItalBridge Partners is one accountable partner between Italian industrial manufacturers and buyers in Kenya and East Africa, based in Nairobi."
+  },
+  "hero": {
+    "title": "One accountable partner between Italian industry and East Africa.",
+    "text": "ItalBridge Partners connects Italian industrial manufacturers with qualified buyers in Kenya and East Africa — and carries every deal from first requirement to after-sales.",
+    "imageAlt": "Nairobi city skyline",
+    "caption": "Our base: Nairobi, serving six East African markets."
+  },
+  "why": {
+    "title": "Why we exist.",
+    "paragraphs": [
+      "Italian manufacturers build some of the world's best industrial equipment, but selling into East Africa usually means opening an office, finding local partners and managing a long chain of intermediaries.",
+      "East African buyers want that equipment — but need someone on the ground who understands the specification, the contract, the shipment and the service that follows."
+    ],
+    "conclusion": "We sit in the middle as a single accountable partner, so both sides deal with one team from start to finish."
+  },
+  "different": {
+    "title": "What makes us different.",
+    "items": [
+      {
+        "title": "A local presence in Nairobi",
+        "text": "On the ground, in the buyer's time zone, able to visit sites and meet teams in person."
+      },
+      {
+        "title": "Direct Italian relationships",
+        "text": "We work directly with manufacturers, not through chains of agents."
+      },
+      {
+        "title": "End-to-end coordination",
+        "text": "From sourcing through commissioning, one team owns every stage."
+      },
+      {
+        "title": "Technical and commercial support",
+        "text": "We read specifications and negotiate contracts — both sides of the deal."
+      },
+      {
+        "title": "Cross-cultural expertise",
+        "text": "Fluent in Italian and East African business cultures, expectations and practice."
+      },
+      {
+        "title": "After-sales coordination",
+        "text": "We stay involved after delivery — installation, spares and service."
+      }
+    ]
+  },
+  "vetting": {
+    "title": "How we choose manufacturers.",
+    "text": "Every manufacturer in our network is vetted before a buyer ever sees a quote, on four criteria:",
+    "imageAlt": "Engineer reviewing a tablet on a factory floor",
+    "criteria": [
+      "Technical capability",
+      "Production capacity",
+      "Quality standards",
+      "Export readiness"
+    ]
+  },
+  "cta": {
+    "title": "Talk to the team.",
+    "text": "Tell us what you make or what you need. One conversation is enough to start.",
+    "primary": "Book a consultation",
+    "secondary": "See our services"
+  }
+}
