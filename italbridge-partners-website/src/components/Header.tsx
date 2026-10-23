@@ -37,7 +37,7 @@ export default function Header({
       >
         {nav.skip}
       </a>
-      <div className="bg-night text-[13px] text-mist">
+      <div className="bg-night text-[13px] text-mist max-[379px]:text-xs">
         {/* Wide screens: location left; email, phone and language right. Phones:
             location and language on the first row, email and phone below. */}
         <div className={`${container} flex flex-wrap items-center gap-x-2 gap-y-2 py-2.5`}>
