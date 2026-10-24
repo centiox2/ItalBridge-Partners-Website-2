@@ -28,6 +28,7 @@ export default function Header({
     { href: href(lang, "marketInsight"), label: nav.marketInsight },
   ];
   const [email] = contact.emails;
+  // The top bar shows the main number only; the footer and Contact page list them all.
   const [phone] = contact.phones;
 
   return (

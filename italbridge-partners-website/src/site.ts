@@ -18,6 +18,12 @@ export const contact = {
       // Opens a WhatsApp chat with the number (app on phones, WhatsApp Web on computers).
       whatsapp: "https://wa.me/254785605999",
     },
+    {
+      display: "+254 788 888 802",
+      international: "+254 788 888 802",
+      tel: "+254788888802",
+      whatsapp: "https://wa.me/254788888802",
+    },
   ],
 };
 
