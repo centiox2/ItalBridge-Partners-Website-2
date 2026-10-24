@@ -1,6 +1,6 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useLayoutEffect, useSyncExternalStore } from "react";
 import { themeKey } from "@/theme";
 
 function subscribe(onChange: () => void) {
@@ -15,6 +15,18 @@ const isDark = () => document.documentElement.dataset.theme === "dark";
 // for later visits; until then the site is light.
 export default function ThemeToggle({ toDark, toLight }: { toDark: string; toLight: string }) {
   const dark = useSyncExternalStore(subscribe, isDark, () => false);
+
+  // Switching language swaps the root layout, and with it <html>, without a
+  // page load, so the head script does not run again: apply the stored choice
+  // here, before the new page paints.
+  useLayoutEffect(() => {
+    let stored = null;
+    try {
+      stored = localStorage.getItem(themeKey);
+    } catch {}
+    const theme = stored === "dark" ? "dark" : "light";
+    if (document.documentElement.dataset.theme !== theme) document.documentElement.dataset.theme = theme;
+  }, []);
 
   function toggle() {
     const next = dark ? "light" : "dark";
