@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Contatti",
-    "description": "Prenotate una consulenza con ItalBridge Partners a Nairobi. Scrivete a info@ o sales@italbridgepartners.co.ke o chiamate il +254 785 605 999."
+    "description": "Prenotate una consulenza con ItalBridge Partners a Nairobi. Scrivete a info@ o sales@italbridgepartners.co.ke o chiamate o scriveteci su WhatsApp al +254 785 605 999."
   },
   "hero": {
     "title": "Prenotate una consulenza.",
@@ -11,6 +11,7 @@
     "general": "Informazioni generali",
     "sales": "Vendite e richieste",
     "phone": "Telefono",
+    "whatsapp": "WhatsApp",
     "imageAlt": "Skyline di Nairobi",
     "caption": "Nairobi, Kenya"
   },

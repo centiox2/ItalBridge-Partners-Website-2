@@ -11,7 +11,13 @@ export const siteUrl =
 export const contact = {
   emails: ["info@italbridgepartners.co.ke", "sales@italbridgepartners.co.ke"],
   phones: [
-    { display: "+254 785 605 999", international: "+254 785 605 999", tel: "+254785605999" },
+    {
+      display: "+254 785 605 999",
+      international: "+254 785 605 999",
+      tel: "+254785605999",
+      // Opens a WhatsApp chat with the number (app on phones, WhatsApp Web on computers).
+      whatsapp: "https://wa.me/254785605999",
+    },
   ],
 };
 

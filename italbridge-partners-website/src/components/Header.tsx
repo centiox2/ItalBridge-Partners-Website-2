@@ -6,6 +6,7 @@ import { contact, href } from "@/site";
 import LanguageSwitcher from "./LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
 import NavLinks from "./NavLinks";
+import { ChatIcon } from "./page/icons";
 import ThemeToggle from "./ThemeToggle";
 import { buttonInk, container, sizeSm } from "./ui";
 import { images } from "@/images";
@@ -45,10 +46,20 @@ export default function Header({
             <span aria-hidden className="pulse inline-block size-[7px] rounded-full bg-steel" />
             {nav.office}
           </span>
-          <span className="flex flex-wrap items-center gap-x-2 max-sm:order-last max-sm:w-full">
-            <a href={`mailto:${email}`} className="-my-2.5 py-2.5 hover:text-white">{email}</a>
-            <span aria-hidden>·</span>
-            <a href={`tel:${phone.tel}`} className="-my-2.5 py-2.5 hover:text-white">{phone.display}</a>
+          {/* Below 360px the email and number take a line each. */}
+          <span className="flex flex-wrap items-center gap-x-2 max-sm:order-last max-sm:w-full max-[359px]:flex-col max-[359px]:items-start max-[359px]:gap-y-2">
+            <a href={`mailto:${email}`} className="-my-2.5 py-2.5 hover:text-white max-[359px]:-my-1 max-[359px]:py-1">{email}</a>
+            <span aria-hidden className="max-[359px]:hidden">·</span>
+            <a
+              href={phone.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${nav.whatsapp}: ${phone.display}`}
+              className="-my-2.5 inline-flex items-center gap-1.5 py-2.5 hover:text-white max-[359px]:-my-1 max-[359px]:py-1"
+            >
+              <ChatIcon />
+              {phone.display}
+            </a>
           </span>
           <span aria-hidden className="max-sm:hidden">·</span>
           <LanguageSwitcher current={lang} label={nav.language} />

@@ -23,6 +23,15 @@ export function Arrow({ className = "stroke-steel" }: { className?: string }) {
   );
 }
 
+// Chat bubble beside a number that opens WhatsApp.
+export function ChatIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg width={14} height={14} viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth={2} strokeLinejoin="round" className={`shrink-0 ${className}`}>
+      <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+    </svg>
+  );
+}
+
 // List with a tick before each item.
 export function CheckList({
   items,

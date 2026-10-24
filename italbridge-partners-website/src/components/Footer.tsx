@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Dictionary } from "@/dictionaries";
 import type { Locale } from "@/i18n";
 import { contact, href, socials, type Route } from "@/site";
+import { ChatIcon } from "./page/icons";
 import { container } from "./ui";
 import { images } from "@/images";
 
@@ -59,16 +60,19 @@ export default async function Footer({
               {email}
             </a>
           ))}
-          <span>
-            {contact.phones.map((phone, i) => (
-              <span key={phone.tel}>
-                {i > 0 && " · "}
-                <a href={`tel:${phone.tel}`} className={link}>
-                  {phone.display}
-                </a>
-              </span>
-            ))}
-          </span>
+          {contact.phones.map((phone) => (
+            <a
+              key={phone.tel}
+              href={phone.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${nav.whatsapp}: ${phone.display}`}
+              className={`${link} inline-flex items-center gap-2`}
+            >
+              <ChatIcon />
+              {phone.display}
+            </a>
+          ))}
         </div>
       </div>
       <div className={`${container} flex flex-wrap justify-between gap-x-8 gap-y-4 border-t border-rule-dark pt-6 pb-10 text-sm`}>

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Contact",
-    "description": "Book a consultation with ItalBridge Partners in Nairobi. Email info@ or sales@italbridgepartners.co.ke or call +254 785 605 999."
+    "description": "Book a consultation with ItalBridge Partners in Nairobi. Email info@ or sales@italbridgepartners.co.ke or call or WhatsApp +254 785 605 999."
   },
   "hero": {
     "title": "Book a consultation.",
@@ -11,6 +11,7 @@
     "general": "General enquiries",
     "sales": "Sales and requirements",
     "phone": "Phone",
+    "whatsapp": "WhatsApp",
     "imageAlt": "Nairobi city skyline",
     "caption": "Nairobi, Kenya"
   },

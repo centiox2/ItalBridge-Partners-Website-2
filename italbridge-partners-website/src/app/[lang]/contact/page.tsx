@@ -24,7 +24,10 @@ export default async function Contact({ params }: PageProps<"/[lang]/contact">) 
   const cards = [
     { label: details.general, value: info, href: `mailto:${info}` },
     { label: details.sales, value: sales, href: `mailto:${sales}` },
-    ...contact.phones.map((p) => ({ label: details.phone, value: p.display, href: `tel:${p.tel}` })),
+    ...contact.phones.flatMap((p) => [
+      { label: details.phone, value: p.display, href: `tel:${p.tel}` },
+      { label: details.whatsapp, value: p.display, href: p.whatsapp, external: true },
+    ]),
   ];
 
   return (
@@ -39,7 +42,12 @@ export default async function Contact({ params }: PageProps<"/[lang]/contact">) 
         <p className="enter m-0 mb-10 max-w-[46ch] text-lg leading-[1.65] text-body">{hero.text}</p>
         <div className="enter grid grid-cols-[repeat(auto-fit,minmax(min(100%,280px),1fr))] gap-3">
           {cards.map((c) => (
-            <a key={c.href} href={c.href} className="lift block min-w-0 rounded-[10px] bg-paper p-5.5 hover:bg-chip-hover">
+            <a
+              key={c.href}
+              href={c.href}
+              {...("external" in c && { target: "_blank", rel: "noopener noreferrer" })}
+              className="lift block min-w-0 rounded-[10px] bg-paper p-5.5 hover:bg-chip-hover"
+            >
               <span className="block text-sm text-sub">{c.label}</span>
               <strong className="mt-1.5 block font-medium [overflow-wrap:anywhere]">{c.value}</strong>
             </a>
