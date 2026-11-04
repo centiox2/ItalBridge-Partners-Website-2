@@ -17,7 +17,9 @@ npm run lint
 In the Cloudflare dashboard (Workers & Pages -> the Worker -> Settings -> Build):
 
 - Root directory: `/` (leave empty)
-- Build command: `npm run build`
+- Build command: leave empty (or `npm run build` with `SKIP_POSTINSTALL_BUILD=1`
+  set as a build variable). On Workers Builds the site is built automatically
+  after `npm clean-install` (`scripts/workers-ci-build.mjs`).
 - Deploy command: `npx wrangler deploy`
 - Node.js 22 or newer (pinned by `.nvmrc`)
 
