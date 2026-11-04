@@ -75,7 +75,7 @@
     "messageHint": "Tipo di macchinario, produzione, volumi, tempi.",
     "messageError": "Una o due frasi ci aiutano a iniziare.",
     "submit": "Invia la richiesta",
-    "sent": "Grazie: si sta aprendo la vostra app di posta.",
+    "sent": "Grazie: la vostra richiesta è stata inviata.",
     "subject": "Richiesta di macchinari"
   }
 }

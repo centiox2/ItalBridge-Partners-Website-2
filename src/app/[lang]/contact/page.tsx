@@ -90,6 +90,9 @@ export default async function Contact({ params }: PageProps<"/[lang]/contact">) 
           submitLabel={copy.submit}
           sentTitle={copy.sent}
           fallback={form.fallback}
+          sendingLabel={form.sending}
+          failedTitle={form.failed}
+          mailtoFallback={form.mailtoFallback}
           againLabel={form.again}
           consent={form.consent}
           privacyLabel={form.privacy}

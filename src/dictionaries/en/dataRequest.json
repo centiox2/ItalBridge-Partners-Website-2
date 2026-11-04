@@ -36,6 +36,6 @@
     "submit": "Submit Request",
     "note": "We may need to verify your identity before processing this request.",
     "subject": "Data request",
-    "sent": "Request ready — your email app is opening."
+    "sent": "Request sent — thank you."
   }
 }

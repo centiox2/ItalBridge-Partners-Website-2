@@ -35,8 +35,9 @@ function isValid(check: Field["check"], value: string) {
   return true;
 }
 
-// Until the site has a mail service, submitting opens the visitor's email
-// app with the form contents addressed to `to`.
+// Submitting sends the form to /api/enquiry, which emails it to `to`. If that
+// fails (no connection, mail service down), it opens the visitor's email app
+// with the same message instead, so the enquiry is never lost.
 export default function EnquiryForm({
   id,
   fields,
@@ -47,6 +48,9 @@ export default function EnquiryForm({
   submitLabel,
   sentTitle,
   fallback,
+  sendingLabel,
+  failedTitle,
+  mailtoFallback,
   againLabel,
   consent,
   privacyLabel,
@@ -61,7 +65,12 @@ export default function EnquiryForm({
   audience?: Audience;
   submitLabel: string;
   sentTitle: string;
+  // Shown under the title after a successful send, before the address.
   fallback: string;
+  sendingLabel: string;
+  // Title and text shown when the site could not send and the email app opened.
+  failedTitle: string;
+  mailtoFallback: string;
   againLabel: string;
   consent: string;
   privacyLabel: string;
@@ -69,6 +78,8 @@ export default function EnquiryForm({
 }) {
   const [errors, setErrors] = useState<Record<string, boolean>>({});
   const [sentTo, setSentTo] = useState<string | null>(null);
+  const [viaMailto, setViaMailto] = useState(false);
+  const [sending, setSending] = useState(false);
   const sentRef = useRef<HTMLDivElement>(null);
   // The submit button disappears with the form: move focus to the confirmation
   // so keyboard and screen reader users are not left at the top of the page.
@@ -80,8 +91,9 @@ export default function EnquiryForm({
   const picked = audience?.options[who];
   const recipient = picked?.to ?? to;
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (sending) return;
     const data = new FormData(event.currentTarget);
     const value = (name: string) => String(data.get(name) ?? "").trim();
 
@@ -98,16 +110,40 @@ export default function EnquiryForm({
     if (picked && audience) lines.unshift(`${audience.legend}: ${picked.who}`);
     const extra = subjectField ? value(subjectField) : "";
     const fullSubject = [subject, picked?.who, extra].filter(Boolean).join(" — ");
-    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(fullSubject)}&body=${encodeURIComponent(lines.join("\n\n"))}`;
+
+    setSending(true);
+    let sent = false;
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          to: recipient,
+          subject: fullSubject,
+          lines,
+          replyTo: value("email"),
+          page: window.location.href,
+          website: value("website"),
+        }),
+      });
+      sent = res.ok;
+    } catch {
+      // Network error: fall through to the email app.
+    }
+    setSending(false);
+    if (!sent) {
+      window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(fullSubject)}&body=${encodeURIComponent(lines.join("\n\n"))}`;
+    }
+    setViaMailto(!sent);
     setSentTo(recipient);
   }
 
   if (sentTo) {
     return (
       <div ref={sentRef} tabIndex={-1} role="status" className="fade flex flex-col items-start gap-3.5 outline-none">
-        <p className="m-0 text-[26px] leading-tight font-semibold">{sentTitle}</p>
+        <p className="m-0 text-[26px] leading-tight font-semibold">{viaMailto ? failedTitle : sentTitle}</p>
         <p className="m-0 leading-relaxed text-body">
-          {fallback}{" "}
+          {viaMailto ? mailtoFallback : fallback}{" "}
           <a href={`mailto:${sentTo}`} className="font-medium underline">
             {sentTo}
           </a>
@@ -131,6 +167,15 @@ export default function EnquiryForm({
       onSubmit={onSubmit}
       className="grid grid-cols-[repeat(auto-fit,minmax(min(220px,100%),1fr))] gap-5"
     >
+      {/* Honeypot: hidden from people and screen readers; bots fill it in. */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="absolute -left-[9999px] h-px w-px overflow-hidden"
+      />
       {audience && (
         <fieldset className="col-span-full m-0 border-0 p-0">
           <legend className="mb-2.5 font-medium">{audience.legend}</legend>
@@ -194,8 +239,13 @@ export default function EnquiryForm({
         );
       })}
       <div className="col-span-full flex flex-wrap items-center gap-x-5 gap-y-3">
-        <button type="submit" className={`${buttonInk} cursor-pointer border-0 px-6 py-3.5 font-medium max-sm:w-full`}>
-          {submitLabel}
+        <button
+          type="submit"
+          disabled={sending}
+          aria-busy={sending || undefined}
+          className={`${buttonInk} cursor-pointer border-0 px-6 py-3.5 font-medium disabled:cursor-wait disabled:opacity-70 max-sm:w-full`}
+        >
+          {sending ? sendingLabel : submitLabel}
         </button>
         <span className="text-sm text-faint">
           {consent}{" "}

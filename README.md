@@ -71,10 +71,16 @@ missing Italian key is a type error.
 
 ### Forms
 
-The forms validate inline but do not post to a server yet: submitting opens the
-visitor's email app with the message filled in (`EnquiryForm.tsx`). Manufacturer
-enquiries go to info@, buyer requirements to sales@. Swap that for a server action
-once a mail service is chosen.
+The forms (`EnquiryForm.tsx`) post to `src/app/api/enquiry/route.ts`, which emails
+them through [Resend](https://resend.com) from `website@italbridgepartners.co.ke`,
+with Reply-To set to the visitor. Manufacturer enquiries go to info@, buyer
+requirements to sales@; the route only sends to the addresses in `contact.emails`.
+If sending fails, the form opens the visitor's email app with the message instead.
+
+Setup: verify `italbridgepartners.co.ke` in Resend, then add the API key to the
+Worker as a secret named `RESEND_API_KEY` (Cloudflare dashboard -> the Worker ->
+Settings -> Variables and Secrets, type Secret). Until the secret is set, the forms
+fall back to the email app.
 
 ### Branding
 

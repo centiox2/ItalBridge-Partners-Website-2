@@ -75,7 +75,7 @@
     "messageHint": "Equipment type, output, volumes, timeline.",
     "messageError": "A sentence or two helps us start.",
     "submit": "Send requirement",
-    "sent": "Thank you — your email app is opening.",
+    "sent": "Thank you — your requirement has been sent.",
     "subject": "Equipment requirement"
   }
 }

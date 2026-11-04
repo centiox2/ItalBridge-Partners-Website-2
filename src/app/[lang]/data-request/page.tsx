@@ -54,6 +54,9 @@ export default async function DataRequest({ params }: PageProps<"/[lang]/data-re
           submitLabel={request.submit}
           sentTitle={request.sent}
           fallback={form.fallback}
+          sendingLabel={form.sending}
+          failedTitle={form.failed}
+          mailtoFallback={form.mailtoFallback}
           againLabel={form.again}
           consent={form.consent}
           privacyLabel={form.privacy}

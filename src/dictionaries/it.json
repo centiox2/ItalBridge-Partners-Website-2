@@ -161,7 +161,10 @@
     ],
     "consent": "Inviando, accettate la nostra",
     "privacy": "Informativa sulla privacy",
-    "fallback": "Se non si è aperto nulla, scrivete a",
+    "fallback": "Vi risponderemo via email. Per aggiungere altro, scrivete a",
+    "sending": "Invio in corso…",
+    "failed": "Non è stato possibile inviare dal sito: si sta aprendo la vostra app di posta.",
+    "mailtoFallback": "Se non si è aperto nulla, scrivete a",
     "again": "Invia un'altra richiesta",
     "preferEmail": "Preferite l'email?"
   },

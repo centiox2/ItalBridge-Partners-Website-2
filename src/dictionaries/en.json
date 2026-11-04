@@ -161,7 +161,10 @@
     ],
     "consent": "By sending, you agree to our",
     "privacy": "Privacy Policy",
-    "fallback": "If nothing opened, write to",
+    "fallback": "We'll reply by email. To add anything, write to",
+    "sending": "Sending…",
+    "failed": "We couldn't send this from the site, so your email app is opening instead.",
+    "mailtoFallback": "If nothing opened, write to",
     "again": "Send another",
     "preferEmail": "Prefer email?"
   },
