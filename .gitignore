@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+# Next.js / OpenNext / Wrangler build output
+/.next/
+/.open-next/
+/.wrangler/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+cloudflare-env.d.ts
+
+# env files
+.env*
+.dev.vars*
+
+# misc
+.DS_Store
+npm-debug.log*
