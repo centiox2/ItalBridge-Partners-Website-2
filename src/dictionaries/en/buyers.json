@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "For buyers",
+    "description": "Source Italian industrial equipment with a partner on the ground in Nairobi: vetted manufacturers, specification review, delivery to site and after-sales support."
+  },
+  "hero": {
+    "title": "Italian industrial equipment, with a partner on the ground.",
+    "text": "Tell us what you need. We match you with a vetted Italian manufacturer, negotiate terms, deliver to your site and stay your local contact after commissioning.",
+    "primary": "Share a requirement",
+    "secondary": "Browse industries",
+    "imageAlt": "Bottling and packaging line in operation"
+  },
+  "reasons": {
+    "title": "Why buy through ItalBridge.",
+    "items": [
+      {
+        "title": "Vetted makers only",
+        "text": "Checked for capability, capacity, quality and export readiness."
+      },
+      {
+        "title": "Your specification, reviewed",
+        "text": "A technical review before anything is quoted."
+      },
+      {
+        "title": "Delivered to your site",
+        "text": "Freight, documentation and customs clearance handled."
+      },
+      {
+        "title": "Support that stays",
+        "text": "One local contact for installation, spares and service."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Before you send a requirement.",
+    "text": "Tick off what you already know. The more you have, the faster we can match — but none of it is required to start.",
+    "of": "of",
+    "verdicts": [
+      "Start with whatever you know — we fill the gaps.",
+      "Good start. We can work with this.",
+      "Great — we can move quickly on this."
+    ],
+    "items": [
+      {
+        "title": "Equipment type",
+        "hint": "e.g. filling line, CNC centre, block plant"
+      },
+      {
+        "title": "Required output",
+        "hint": "Units per hour, tonnes per day"
+      },
+      {
+        "title": "Product or material",
+        "hint": "What the equipment will process"
+      },
+      {
+        "title": "Site constraints",
+        "hint": "Space, power supply, utilities"
+      },
+      {
+        "title": "Target timeline",
+        "hint": "When it needs to be running"
+      },
+      {
+        "title": "Budget range",
+        "hint": "A rough figure helps us match"
+      }
+    ]
+  },
+  "form": {
+    "title": "Share a requirement.",
+    "text": "We review every requirement and come back with next steps.",
+    "countryHint": "Where the equipment will be installed.",
+    "message": "What do you need?",
+    "messageHint": "Equipment type, output, volumes, timeline.",
+    "messageError": "A sentence or two helps us start.",
+    "submit": "Send requirement",
+    "sent": "Thank you — your email app is opening.",
+    "subject": "Equipment requirement"
+  }
+}

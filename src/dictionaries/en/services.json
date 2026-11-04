@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "Services",
+    "description": "Six stages from requirement to operation: buyer qualification, needs assessment, manufacturer matching, deal structuring, logistics and customs, and after-sales support."
+  },
+  "hero": {
+    "title": "Six stages from requirement to operation.",
+    "text": "Every deal follows the same path. Each stage has an owner on our side, so neither the buyer nor the manufacturer is left chasing the next step."
+  },
+  "tabsLabel": "Stages",
+  "weDo": "What we do",
+  "youGet": "What you receive",
+  "stages": [
+    {
+      "name": "Buyer identification and qualification",
+      "alt": "Nairobi city skyline",
+      "body": "We find East African manufacturers with real equipment needs and check their capacity, budget and timelines before anyone invests time in a quote.",
+      "we": [
+        "Identify buyers with genuine requirements",
+        "Qualify capacity and timelines",
+        "Confirm decision-makers and budget"
+      ],
+      "you": [
+        "A qualified lead, not a cold contact",
+        "A clear picture of the opportunity"
+      ]
+    },
+    {
+      "name": "Needs assessment",
+      "alt": "Engineer reviewing a tablet on a factory floor",
+      "body": "A technical review of specifications, production volumes and operating constraints, turned into a brief a manufacturer can quote against.",
+      "we": [
+        "Review specifications and volumes",
+        "Note site and operating constraints",
+        "Write a clear technical brief"
+      ],
+      "you": [
+        "A specification both sides agree on",
+        "Fewer surprises at quotation"
+      ]
+    },
+    {
+      "name": "Manufacturer matching",
+      "alt": "CNC machining spindle at work",
+      "body": "We pair the buyer with a suitable Italian manufacturer from our verified network.",
+      "we": [
+        "Shortlist from the vetted network",
+        "Check fit on capability and capacity",
+        "Introduce both sides"
+      ],
+      "you": [
+        "A maker vetted for export readiness",
+        "A direct relationship, no agent chain"
+      ]
+    },
+    {
+      "name": "Negotiation and deal structuring",
+      "alt": "Conveyor lines in a production hall",
+      "body": "Price, terms, payment and contract conditions are handled for both sides so the deal holds up.",
+      "we": [
+        "Negotiate price and terms",
+        "Structure payment",
+        "Coordinate contract conditions"
+      ],
+      "you": [
+        "A deal that works for both parties",
+        "One point of contact throughout"
+      ]
+    },
+    {
+      "name": "Logistics and customs coordination",
+      "alt": "Container ship berthing at a port",
+      "body": "Freight, documentation and clearance from the Italian factory to the buyer's site.",
+      "we": [
+        "Coordinate freight",
+        "Prepare shipping documentation",
+        "Manage customs clearance"
+      ],
+      "you": [
+        "Equipment delivered to site",
+        "Paperwork handled end to end"
+      ]
+    },
+    {
+      "name": "After-sales support",
+      "alt": "Industrial robot arm in operation",
+      "body": "A single local contact for installation, spare parts, technical questions and service.",
+      "we": [
+        "Coordinate installation",
+        "Source spare parts",
+        "Route technical questions to the maker"
+      ],
+      "you": [
+        "One local contact after delivery",
+        "Support that continues past the invoice"
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Questions about how we work",
+    "items": [
+      {
+        "q": "Can you handle only part of the process?",
+        "a": "Our model is end to end, because that is where accountability matters most. Tell us where you are in a deal and we will tell you honestly how we can help."
+      },
+      {
+        "q": "How do you vet manufacturers?",
+        "a": "On technical capability, capacity, quality and export readiness, before a buyer sees a quote."
+      },
+      {
+        "q": "Who handles freight and customs?",
+        "a": "We coordinate freight, documentation and clearance from the Italian factory to the buyer's site."
+      },
+      {
+        "q": "Which countries do you cover?",
+        "a": "We serve six East African markets from our Nairobi office. Get in touch to confirm coverage for your destination."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to start at stage one?",
+    "text": "Share your requirement or your product range. We'll map the path for your deal.",
+    "primary": "Book a consultation",
+    "secondary": "Browse industries"
+  }
+}

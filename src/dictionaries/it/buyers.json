@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Per gli acquirenti",
+    "description": "Macchinari industriali italiani con un partner sul posto a Nairobi: produttori verificati, revisione della specifica, consegna al sito e assistenza post-vendita."
+  },
+  "hero": {
+    "title": "Macchinari industriali italiani, con un partner sul posto.",
+    "text": "Diteci di cosa avete bisogno. Vi abbiniamo a un produttore italiano verificato, negoziamo le condizioni, consegniamo al vostro sito e restiamo il vostro referente locale dopo la messa in servizio.",
+    "primary": "Inviate una richiesta",
+    "secondary": "Esplora i settori",
+    "imageAlt": "Linea di imbottigliamento e confezionamento in funzione"
+  },
+  "reasons": {
+    "title": "Perché acquistare tramite ItalBridge.",
+    "items": [
+      {
+        "title": "Solo produttori verificati",
+        "text": "Controllati per capacità tecnica e produttiva, qualità e preparazione all'export."
+      },
+      {
+        "title": "La vostra specifica, revisionata",
+        "text": "Una revisione tecnica prima di qualsiasi offerta."
+      },
+      {
+        "title": "Consegna al vostro sito",
+        "text": "Trasporto, documenti e sdoganamento gestiti."
+      },
+      {
+        "title": "Un supporto che resta",
+        "text": "Un unico referente locale per installazione, ricambi e assistenza."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Prima di inviare una richiesta.",
+    "text": "Spuntate ciò che sapete già. Più informazioni avete, più rapido è l'abbinamento, ma nessuna è obbligatoria per iniziare.",
+    "of": "di",
+    "verdicts": [
+      "Partite da ciò che sapete: al resto pensiamo noi.",
+      "Buon inizio. Possiamo lavorarci.",
+      "Ottimo: possiamo muoverci rapidamente."
+    ],
+    "items": [
+      {
+        "title": "Tipo di macchinario",
+        "hint": "es. linea di riempimento, centro CNC, impianto per blocchi"
+      },
+      {
+        "title": "Produzione richiesta",
+        "hint": "Pezzi all'ora, tonnellate al giorno"
+      },
+      {
+        "title": "Prodotto o materiale",
+        "hint": "Cosa lavorerà la macchina"
+      },
+      {
+        "title": "Vincoli del sito",
+        "hint": "Spazio, alimentazione elettrica, utenze"
+      },
+      {
+        "title": "Tempistica",
+        "hint": "Quando deve essere operativa"
+      },
+      {
+        "title": "Fascia di budget",
+        "hint": "Una cifra indicativa ci aiuta nell'abbinamento"
+      }
+    ]
+  },
+  "form": {
+    "title": "Inviate una richiesta.",
+    "text": "Esaminiamo ogni richiesta e vi ricontattiamo con i passi successivi.",
+    "countryHint": "Dove verrà installato il macchinario.",
+    "message": "Di cosa avete bisogno?",
+    "messageHint": "Tipo di macchinario, produzione, volumi, tempi.",
+    "messageError": "Una o due frasi ci aiutano a iniziare.",
+    "submit": "Invia la richiesta",
+    "sent": "Grazie: si sta aprendo la vostra app di posta.",
+    "subject": "Richiesta di macchinari"
+  }
+}

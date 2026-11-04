@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "title": "Market insight",
+    "description": "Kenya's machinery and capital equipment imports, Italy's share of Kenyan packaging-machinery imports and Italian exports to Kenya, with sources."
+  },
+  "hero": {
+    "title": "Kenya is buying more machinery. Italy builds some of the best.",
+    "text": "The figures behind the opportunity, with their sources. Hover a bar to see the value."
+  },
+  "imports": {
+    "title": "Kenya — machinery and capital equipment imports, Q3",
+    "unit": "KSh billions · KNBS Q3 2025 Balance of Payments release",
+    "bars": [
+      {
+        "label": "Q3 2024",
+        "value": "96.3",
+        "tip": "Q3 2024 · KSh 96.3B",
+        "aria": "Q3 2024: KSh 96.3 billion"
+      },
+      {
+        "label": "Q3 2025",
+        "value": "139.1",
+        "tip": "Q3 2025 · KSh 139.1B (+44%)",
+        "aria": "Q3 2025: KSh 139.1 billion"
+      }
+    ],
+    "note": "Up about 44% in a year. Industrial machinery spending alone rose 94.8%."
+  },
+  "stats": [
+    {
+      "value": "+94.8%",
+      "text": "Kenya's industrial machinery spending, Q3 2025 vs Q3 2024."
+    },
+    {
+      "value": "€9B+",
+      "text": "Italian packaging-machinery turnover; around 80% is exported."
+    }
+  ],
+  "position": {
+    "title": "Italy's position in Kenya.",
+    "text": "In packaging machinery, Italy is already the third-largest supplier. Machinery overall is about a third of what Italy sends to Kenya.",
+    "charts": [
+      {
+        "title": "Kenya packaging-machinery imports, 2024 — €117M",
+        "part": {
+          "tip": "Italy · €17M · 14.5%",
+          "aria": "Italy: 17 million euro, 14.5 percent",
+          "legend": "Italy — €17M, third after India and China"
+        },
+        "rest": {
+          "tip": "All other suppliers · €100M",
+          "aria": "All other suppliers: 100 million euro",
+          "legend": "All other suppliers"
+        }
+      },
+      {
+        "title": "Italian exports to Kenya, 2024 — ~$154M",
+        "part": {
+          "tip": "Machinery · ~$55M",
+          "aria": "Machinery: about 55 million dollars",
+          "legend": "Machinery — about a third"
+        },
+        "rest": {
+          "tip": "Other goods · ~$99M",
+          "aria": "Other goods: about 99 million dollars",
+          "legend": "Other goods"
+        }
+      }
+    ]
+  },
+  "sources": {
+    "title": "Data and sources.",
+    "head": [
+      "Measure",
+      "Value",
+      "Source"
+    ],
+    "rows": [
+      [
+        "Kenya machinery and capital equipment imports, Q3 2024 → Q3 2025",
+        "KSh 96.3B → 139.1B",
+        "KNBS, via Capital FM (Jan 2026)"
+      ],
+      [
+        "Kenya industrial machinery spend, Q3 2025 y/y",
+        "+94.8%",
+        "KNBS, via Capital FM (Jan 2026)"
+      ],
+      [
+        "Kenya packaging-machinery imports, 2024",
+        "€117M (+11%)",
+        "ICE/TDM, via ANSA (May 2025)"
+      ],
+      [
+        "Italy's share of the above",
+        "€17M · 14.5%",
+        "ICE/TDM, via ANSA (May 2025)"
+      ],
+      [
+        "Italian packaging-machinery sector turnover",
+        "€9B+, ~80% exported",
+        "ANSA (May 2025)"
+      ],
+      [
+        "Italian exports to Kenya, of which machinery, 2024",
+        "~$154M, ~$55M",
+        "2024 export data (approx.)"
+      ]
+    ]
+  },
+  "cta": {
+    "title": "What does this mean for your sector?",
+    "text": "Tell us your industry and we'll walk you through the fit — in one conversation.",
+    "button": "Book a consultation"
+  }
+}

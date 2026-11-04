@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "Servizi",
+    "description": "Sei fasi dalla richiesta all'operatività: qualifica degli acquirenti, analisi dei requisiti, scelta del produttore, struttura dell'accordo, logistica e dogana, assistenza post-vendita."
+  },
+  "hero": {
+    "title": "Sei fasi dalla richiesta all'operatività.",
+    "text": "Ogni affare segue lo stesso percorso. Ogni fase ha un responsabile da parte nostra, così né l'acquirente né il produttore devono inseguire il passo successivo."
+  },
+  "tabsLabel": "Fasi",
+  "weDo": "Cosa facciamo",
+  "youGet": "Cosa ricevete",
+  "stages": [
+    {
+      "name": "Individuazione e qualifica degli acquirenti",
+      "alt": "Skyline di Nairobi",
+      "body": "Troviamo aziende manifatturiere dell'Africa orientale con reali esigenze di macchinari e ne verifichiamo capacità, budget e tempi prima che qualcuno investa tempo in un'offerta.",
+      "we": [
+        "Individuiamo acquirenti con esigenze concrete",
+        "Verifichiamo capacità e tempi",
+        "Confermiamo decisori e budget"
+      ],
+      "you": [
+        "Un contatto qualificato, non un nominativo a freddo",
+        "Un quadro chiaro dell'opportunità"
+      ]
+    },
+    {
+      "name": "Analisi dei requisiti",
+      "alt": "Ingegnere che consulta un tablet in reparto",
+      "body": "Una revisione tecnica di specifiche, volumi produttivi e vincoli operativi, tradotta in un capitolato su cui il produttore può fare un'offerta.",
+      "we": [
+        "Esaminiamo specifiche e volumi",
+        "Annotiamo i vincoli del sito e operativi",
+        "Redigiamo un capitolato tecnico chiaro"
+      ],
+      "you": [
+        "Una specifica condivisa da entrambe le parti",
+        "Meno sorprese in fase di offerta"
+      ]
+    },
+    {
+      "name": "Scelta del produttore",
+      "alt": "Mandrino di una macchina CNC al lavoro",
+      "body": "Abbiniamo l'acquirente al produttore italiano più adatto della nostra rete verificata.",
+      "we": [
+        "Selezioniamo una rosa dalla rete verificata",
+        "Verifichiamo l'idoneità per capacità tecnica e produttiva",
+        "Presentiamo le due parti"
+      ],
+      "you": [
+        "Un produttore verificato per l'export",
+        "Un rapporto diretto, senza catene di agenti"
+      ]
+    },
+    {
+      "name": "Negoziazione e struttura dell'accordo",
+      "alt": "Linee di trasporto in un capannone produttivo",
+      "body": "Prezzo, condizioni, pagamento e clausole contrattuali vengono gestiti per entrambe le parti, perché l'accordo regga.",
+      "we": [
+        "Negoziamo prezzo e condizioni",
+        "Strutturiamo il pagamento",
+        "Coordiniamo le clausole contrattuali"
+      ],
+      "you": [
+        "Un accordo che funziona per entrambe le parti",
+        "Un unico referente per tutto il percorso"
+      ]
+    },
+    {
+      "name": "Coordinamento di logistica e dogana",
+      "alt": "Nave portacontainer in fase di attracco",
+      "body": "Trasporto, documenti e sdoganamento dalla fabbrica italiana al sito dell'acquirente.",
+      "we": [
+        "Coordiniamo il trasporto",
+        "Prepariamo i documenti di spedizione",
+        "Gestiamo lo sdoganamento"
+      ],
+      "you": [
+        "Macchinari consegnati al sito",
+        "Pratiche gestite dall'inizio alla fine"
+      ]
+    },
+    {
+      "name": "Assistenza post-vendita",
+      "alt": "Braccio robotico industriale in funzione",
+      "body": "Un unico referente locale per installazione, ricambi, domande tecniche e assistenza.",
+      "we": [
+        "Coordiniamo l'installazione",
+        "Reperiamo i ricambi",
+        "Inoltriamo le domande tecniche al produttore"
+      ],
+      "you": [
+        "Un referente locale dopo la consegna",
+        "Un supporto che continua oltre la fattura"
+      ]
+    }
+  ],
+  "faq": {
+    "title": "Domande su come lavoriamo",
+    "items": [
+      {
+        "q": "Potete gestire solo una parte del processo?",
+        "a": "Il nostro modello è end-to-end, perché è lì che la responsabilità conta di più. Diteci a che punto siete di una trattativa e vi diremo onestamente come possiamo aiutarvi."
+      },
+      {
+        "q": "Come verificate i produttori?",
+        "a": "Su capacità tecnica, capacità produttiva, qualità e preparazione all'export, prima che un acquirente veda un'offerta."
+      },
+      {
+        "q": "Chi si occupa di trasporto e dogana?",
+        "a": "Coordiniamo trasporto, documenti e sdoganamento dalla fabbrica italiana al sito dell'acquirente."
+      },
+      {
+        "q": "Quali paesi coprite?",
+        "a": "Serviamo sei mercati dell'Africa orientale dal nostro ufficio di Nairobi. Contattateci per confermare la copertura della vostra destinazione."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pronti a partire dalla prima fase?",
+    "text": "Condividete la vostra richiesta o la vostra gamma di prodotti. Tracceremo il percorso del vostro affare.",
+    "primary": "Prenota una consulenza",
+    "secondary": "Esplora i settori"
+  }
+}

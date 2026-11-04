@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Chi siamo",
+    "description": "ItalBridge Partners è l'unico partner responsabile tra i produttori industriali italiani e gli acquirenti in Kenya e in Africa orientale, con sede a Nairobi."
+  },
+  "hero": {
+    "title": "Un unico partner responsabile tra l'industria italiana e l'Africa orientale.",
+    "text": "ItalBridge Partners mette in contatto i produttori industriali italiani con acquirenti qualificati in Kenya e in Africa orientale, e segue ogni affare dalla prima richiesta al post-vendita.",
+    "imageAlt": "Skyline di Nairobi",
+    "caption": "La nostra base: Nairobi, al servizio di sei mercati dell'Africa orientale."
+  },
+  "why": {
+    "title": "Perché esistiamo.",
+    "paragraphs": [
+      "I produttori italiani costruiscono alcuni dei migliori macchinari industriali al mondo, ma vendere in Africa orientale significa di solito aprire un ufficio, trovare partner locali e gestire una lunga catena di intermediari.",
+      "Gli acquirenti dell'Africa orientale vogliono quei macchinari, ma hanno bisogno di qualcuno sul posto che capisca la specifica, il contratto, la spedizione e l'assistenza che segue."
+    ],
+    "conclusion": "Ci collochiamo nel mezzo come unico partner responsabile, così entrambe le parti trattano con un solo team dall'inizio alla fine."
+  },
+  "different": {
+    "title": "Cosa ci distingue.",
+    "items": [
+      {
+        "title": "Una presenza locale a Nairobi",
+        "text": "Sul posto, nel fuso orario dell'acquirente, in grado di visitare i siti e incontrare i team di persona."
+      },
+      {
+        "title": "Rapporti diretti con l'Italia",
+        "text": "Lavoriamo direttamente con i produttori, non tramite catene di agenti."
+      },
+      {
+        "title": "Coordinamento end-to-end",
+        "text": "Dalla ricerca alla messa in servizio, un solo team è responsabile di ogni fase."
+      },
+      {
+        "title": "Supporto tecnico e commerciale",
+        "text": "Leggiamo le specifiche e negoziamo i contratti, per entrambe le parti."
+      },
+      {
+        "title": "Competenza interculturale",
+        "text": "Conosciamo le culture d'impresa, le aspettative e le prassi italiane e dell'Africa orientale."
+      },
+      {
+        "title": "Coordinamento post-vendita",
+        "text": "Restiamo coinvolti dopo la consegna: installazione, ricambi e assistenza."
+      }
+    ]
+  },
+  "vetting": {
+    "title": "Come scegliamo i produttori.",
+    "text": "Ogni produttore della nostra rete viene verificato prima che un acquirente veda un'offerta, secondo quattro criteri:",
+    "imageAlt": "Ingegnere che consulta un tablet in reparto",
+    "criteria": [
+      "Capacità tecnica",
+      "Capacità produttiva",
+      "Standard di qualità",
+      "Preparazione all'export"
+    ]
+  },
+  "cta": {
+    "title": "Parlate con il team.",
+    "text": "Diteci cosa producete o di cosa avete bisogno. Basta una conversazione per iniziare.",
+    "primary": "Prenota una consulenza",
+    "secondary": "I nostri servizi"
+  }
+}

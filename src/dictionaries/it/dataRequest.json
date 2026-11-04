@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Richiesta di accesso e cancellazione dei dati",
+    "description": "Richiedi l'accesso, la rettifica o la cancellazione dei dati personali che ItalBridge Partners detiene su di te."
+  },
+  "title": "Richiesta di accesso e cancellazione dei dati",
+  "intro": "Ai sensi del Kenya Data Protection Act, 2019 e del GDPR, hai il diritto di accedere ai tuoi dati personali, di rettificarli o di cancellarli. Invia una richiesta tramite il modulo sottostante: ti risponderemo entro 30 giorni.",
+  "rights": {
+    "title": "Il controllo sui tuoi dati personali.",
+    "text": "Hai il diritto di sapere quali dati personali deteniamo su di te, di rettificarli se inesatti e di richiederne la cancellazione. Gestiamo queste richieste nel rispetto sia del Kenya Data Protection Act sia del GDPR.",
+    "label": "Tipologie di richiesta",
+    "items": [
+      {
+        "title": "Richiesta di accesso",
+        "text": "Ricevi una copia dei dati personali che deteniamo su di te."
+      },
+      {
+        "title": "Richiesta di rettifica",
+        "text": "Correggi dati personali inesatti o incompleti."
+      },
+      {
+        "title": "Richiesta di cancellazione",
+        "text": "Chiedi la cancellazione dei tuoi dati personali (“diritto all'oblio”)."
+      }
+    ]
+  },
+  "form": {
+    "title": "Invia una richiesta",
+    "requestType": "Tipo di richiesta",
+    "options": [
+      "Accedere ai miei dati",
+      "Rettificare i miei dati",
+      "Cancellare i miei dati"
+    ],
+    "details": "Dettagli",
+    "submit": "Invia la richiesta",
+    "note": "Potrebbe essere necessario verificare la tua identità prima di dare seguito alla richiesta.",
+    "subject": "Richiesta dati",
+    "sent": "Richiesta pronta: si sta aprendo la vostra app di posta."
+  }
+}

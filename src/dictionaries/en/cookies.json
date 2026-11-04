@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Cookie Policy",
+    "description": "How ItalBridge Partners uses cookies and how you can control your preferences."
+  },
+  "title": "Cookie Policy",
+  "intro": "This Cookie Policy explains how ItalBridge Partners uses cookies and similar technologies, and how you can control your preferences.",
+  "lastUpdated": "August 2026",
+  "sections": [
+    {
+      "title": "What Are Cookies",
+      "text": "Cookies are small text files placed on your device when you visit a website. They allow the site to remember your actions and preferences over a period of time. ItalBridge Partners uses cookies to operate the website and, with your consent, to understand how the site is used."
+    },
+    {
+      "title": "Types of Cookies We Use",
+      "text": "Necessary cookies: required for the website to function correctly, including remembering your cookie consent preferences. These cannot be disabled. Analytics cookies: used only with your consent, to collect anonymous information about how visitors use the site so we can improve it."
+    },
+    {
+      "title": "Consent",
+      "text": "When you first visit our website, you will see a cookie consent banner. You may accept all cookies, reject non-necessary cookies, or manage your preferences. Your choice is logged with a timestamp and stored locally. You can change your preferences at any time using the Cookie Settings link in the footer."
+    },
+    {
+      "title": "Consent Logging",
+      "text": "We record your consent decision — including the categories of cookies accepted and the date and time of your choice — to demonstrate compliance with the Kenya Data Protection Act and the GDPR requirement for demonstrable consent."
+    },
+    {
+      "title": "Third-Party Cookies",
+      "text": "We do not use third-party advertising or tracking cookies. Analytics, where enabled, uses privacy-respecting tools that do not identify individual users."
+    },
+    {
+      "title": "Managing Cookies in Your Browser",
+      "text": "In addition to our consent manager, you can control or delete cookies through your browser settings. Note that disabling all cookies may affect the functionality of the website."
+    },
+    {
+      "title": "Updates",
+      "text": "We may update this Cookie Policy as our use of cookies changes. Material changes will be reflected in the “Last Updated” date above."
+    },
+    {
+      "title": "Contact",
+      "text": "For cookie-related enquiries, contact info@italbridgepartners.co.ke."
+    }
+  ]
+}

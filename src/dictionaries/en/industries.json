@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Industries",
+    "description": "Italian equipment for plastics and packaging, food and beverage, industrial automation, precision engineering, construction materials and the automotive aftermarket in East Africa."
+  },
+  "hero": {
+    "title": "Equipment for the sectors that drive East African industry.",
+    "text": "Six industries, each served by vetted Italian manufacturers and supported locally from Nairobi. Select one to see what we source."
+  },
+  "pickerLabel": "Industries",
+  "equipment": "Equipment we source",
+  "categories": "Manufacturer categories",
+  "discuss": "Discuss a project",
+  "deliver": "How we deliver",
+  "items": [
+    {
+      "name": "Plastics and packaging",
+      "body": "Kenya imported €117M of packaging machinery in 2024, up 11%, with Italy supplying 14.5% — third behind India and China. Italian packaging machinery is a €9B+ industry that exports around 80% of its output.",
+      "items": [
+        "Filling, wrapping and form-fill-seal lines",
+        "Extrusion and moulding equipment",
+        "Converting and labelling equipment"
+      ],
+      "cats": "Packaging technologies · Industrial machinery"
+    },
+    {
+      "name": "Food and beverage processing",
+      "body": "Processing, filling and bottling equipment for food and beverage producers scaling up across Kenya and the region.",
+      "items": [
+        "Processing lines",
+        "Filling and bottling",
+        "Conveying and handling"
+      ],
+      "cats": "Food processing equipment · Packaging technologies"
+    },
+    {
+      "name": "Industrial automation",
+      "body": "Control systems, robotics and integration from Italian automation specialists, matched to existing production lines.",
+      "items": [
+        "Robotic cells and handling",
+        "Control and PLC systems",
+        "Line integration"
+      ],
+      "cats": "Automation and control systems"
+    },
+    {
+      "name": "Precision engineering",
+      "body": "CNC machining centres, tooling and components for fabricators and maintenance operations.",
+      "items": [
+        "CNC machining centres",
+        "Tooling and fixtures",
+        "Spares and wear parts"
+      ],
+      "cats": "Precision engineering · Industrial components"
+    },
+    {
+      "name": "Construction materials",
+      "body": "Plant and equipment for the construction materials sector across a fast-building region.",
+      "items": [
+        "Block and tile plant",
+        "Aggregate processing",
+        "Mixing and handling"
+      ],
+      "cats": "Industrial machinery"
+    },
+    {
+      "name": "Automotive aftermarket",
+      "body": "Workshop equipment and components for service, repair and parts businesses.",
+      "items": [
+        "Workshop equipment",
+        "Components and parts",
+        "Machining for repair"
+      ],
+      "cats": "Industrial components · Precision engineering"
+    }
+  ],
+  "network": {
+    "title": "Our manufacturer network.",
+    "text": "Every manufacturer is vetted on technical capability, capacity, quality and export readiness. The network spans six categories.",
+    "categories": [
+      "Industrial machinery",
+      "Automation and control systems",
+      "Precision engineering",
+      "Food processing equipment",
+      "Packaging technologies",
+      "Industrial components"
+    ]
+  },
+  "cta": {
+    "title": "Don't see your equipment listed?",
+    "text": "Tell us what you need. If it's built in Italy, we can usually find the right maker.",
+    "button": "Share a requirement"
+  }
+}
