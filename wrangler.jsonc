@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "italbridge-partners",
+  "name": "italbridge-partners-website-2",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-10-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
@@ -12,7 +12,7 @@
     {
       // Self-reference, used by the Next.js cache; must match "name" above.
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "italbridge-partners"
+      "service": "italbridge-partners-website-2"
     }
   ],
   // Resizes photos and serves AVIF / WebP, like next/image does on other hosts.

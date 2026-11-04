@@ -23,7 +23,7 @@ In the Cloudflare dashboard (Workers & Pages -> the Worker -> Settings -> Build)
 - Deploy command: `npx wrangler deploy`
 - Node.js 22 or newer (pinned by `.nvmrc`)
 
-The Worker name in `wrangler.jsonc` (`italbridge-partners`) must match the
+The Worker name in `wrangler.jsonc` (`italbridge-partners-website-2`) must match the
 Worker's name in the dashboard.
 
 ## Structure
